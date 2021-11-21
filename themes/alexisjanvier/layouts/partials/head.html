@@ -1,0 +1,56 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="{{ .RelPermalink }}">
+    {{ if .IsHome }}
+    {{ with .Site.Params.homeMetaContent }}
+      <meta name="description" content="{{ . | plainify }}">
+    {{ end }}
+  {{ else }}
+    {{ $summary := trim (.Summary | plainify | htmlUnescape) "\n\r"
+      | default .Title }}
+    <meta name="description" content="{{ $summary }}">
+  {{ end }}
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "favicon/apple-touch-icon.png" | absURL }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon/favicon-32x32.png" | absURL }}"> 
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon/favicon-16x16.png" | absURL }}"> 
+    <link rel="stylesheet" href="{{ "css/themer-prism-dark.css" | relURL }}" media="none" onload="this.media='all';">
+    <link rel="stylesheet" type="text/css" href="{{ "css/main.css" | relURL }}">
+    {{ $title := print .Title " | " .Site.Title }}
+    {{ if .IsHome }}
+      {{ $title = .Site.Title }}
+    {{ end }}
+    <title>{{ $title }}</title>
+
+    <link rel="alternate" type="application/rss+xml" title="Alexis Janvier — Developpeur habitué au Web" href="{{ "feed.xml" | absURL }}" />
+
+    <meta property="og:title" content="Alexis Janvier" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta name="description"
+        content="Internet is not dead it just smells funny." />
+    <meta property="og:description"
+        content="Internet is not dead it just smells funny." />
+    <link rel="canonical" href="https://alexisjanvier.net/" />
+    <meta property="og:url" content="https://alexisjanvier.net/" />
+    <meta property="og:site_name" content="Alexis Janvier" />
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Alexis Janvier" />
+    <script type="application/ld+json">
+    {"description":"Internet is not dead it just smells funny..","url":"https://alexisjanvier.net/","@type":"WebSite","headline":"Internet is not dead it just smells funny.","name":"Alexis Janvier","@context":"https://schema.org"}</script>
+    <script type="text/javascript" >
+      function openMenu() {
+        document.getElementById("nav").className = '';
+        document.getElementById("menu").className = 'fadeIn animated';
+        document.querySelector(".menu").className = 'menu';
+      }
+      
+      function closeMenu() {
+        document.getElementById("menu").className = 'fadeOut animated';
+        setTimeout(function () {
+          document.querySelector(".menu").className = 'menu hide2';
+        }, 300);
+      }
+  </script> 
+</head>
+  

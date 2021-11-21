@@ -1,0 +1,7 @@
+baseURL = 'https://alexisjanvier.net/'
+languageCode = 'fr'
+title = 'Alexis Janvier'
+theme = 'alexisjanvier'
+[params]
+  description = 'Internet is not dead it just smells funny.'
+  homeMetaContent = 'Internet is not dead it just smells funny.'

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+    {{ partial "head.html" . }}
+    <body>
+        <div class="row">
+            <div class="col-xs-12 col-md-3 no-margin">
+                {{ partial "header.html" . }}
+                {{ partial "footer-desktop.html" . }}
+            </div>
+            <div class="col-xs-12 col-md-9 no-margin">
+                <main class="page-content" aria-label="Content">
+                    <div class="wrapper">
+                        {{ block "main" . }}{{ end }}
+                    </div>
+                </main>
+                {{ partial "footer-mobile.html" . }}
+            </div>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="home">
+  {{ partial "latest-blog-item.html" . }}
+  <section class="post-list">
+      <h1 class="section-title">Articles récents</h1>
+      {{ partial "blog-item.html" . }}
+      {{ partial "blog-item.html" . }}
+  </section>
+  <section class="post-list">
+    <h1 class="section-title">Talks récents</h1>
+    {{ partial "blog-item.html" . }}
+    {{ partial "blog-item.html" . }}
+</section>
+</div>
+{{ end }}
