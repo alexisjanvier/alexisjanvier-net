@@ -1,16 +1,18 @@
-+++
-title = "Du PHP au Go: une semaine pour réaliser un produit fonctionnel"
-slug = "du-php-au-go-une-semaine-pour-realiser-un-produit-fonctionnel"
-date = 2014-09-22
-description = "Du PHP au Go: une semaine pour réaliser un produit fonctionnel."
-draft = false
-in_search_index = true
-[taxonomies]
-tags = ["go"]
-categories = ["informatique"]
-[extra]
-marmelab = "https://marmelab.com/blog/2014/09/22/golang-par-la-pratique.html"
-+++
+---
+date: "2014-09-22"
+description: 'Du PHP au Go: une semaine pour réaliser un produit fonctionnel.'
+draft: false
+extra:
+  marmelab: https://marmelab.com/blog/2014/09/22/golang-par-la-pratique.html
+in_search_index: true
+slug: du-php-au-go-une-semaine-pour-realiser-un-produit-fonctionnel
+taxonomies:
+  categories:
+  - informatique
+  tags:
+  - go
+title: 'Du PHP au Go: une semaine pour réaliser un produit fonctionnel'
+---
 
 <img src="go-by-practice.png">
 

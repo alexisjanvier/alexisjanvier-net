@@ -1,16 +1,20 @@
-+++
-title="5e édition du Printemps Agile de Caen"
-slug="5e-edition-du-printemps-agile-de-caen"
-date = 2017-06-12
-description="Jusqu'à présent, la ville de Caen était réputée pour sa scène rock (The Lanskies, Cannibale, Grand Parc) et electro (Baadman, Superpoze, Fakear). Mais elle risque également de le devenir pour son dynamisme autour de l'agilité."
-draft = false
-in_search_index = true
-[taxonomies]
-categories = ["informatique"]
-tags = ["projet"]
-[extra]
-marmelab="https://marmelab.com/blog/2017/06/12/printemps-agile.html"
-+++
+---
+date: "2017-06-12"
+description: Jusqu'à présent, la ville de Caen était réputée pour sa scène rock (The
+  Lanskies, Cannibale, Grand Parc) et electro (Baadman, Superpoze, Fakear). Mais elle
+  risque également de le devenir pour son dynamisme autour de l'agilité.
+draft: false
+extra:
+  marmelab: https://marmelab.com/blog/2017/06/12/printemps-agile.html
+in_search_index: true
+slug: 5e-edition-du-printemps-agile-de-caen
+taxonomies:
+  categories:
+  - informatique
+  tags:
+  - projet
+title: 5e édition du Printemps Agile de Caen
+---
 
 Les méthodes agiles ont le vent en poupe, c'est certain et souvent justifié. Mais organiser une journée consacrée à l'agilité dans les 1000 m² du centre des congrès de Caen semblait un pari osé. Pourtant, cette 5e édition du [Printemps Agile](http://www.club-agile-caen.fr/printemps-agile/printemps-agile-2017/) a réuni plus de 600 personnes autour d'une quarantaine d'ateliers ! Retour sur cette journée pleine de jeux sérieux.
 

@@ -1,15 +1,21 @@
-+++
-title="Journal intime d'un développeur"
-slug="journal-intime-dun-developpeur"
-date = 2018-11-07
-description="Une chose que j’aime particulièrement dans mon métier de développeur, c’est que l’on apprend tout le temps : un pattern, une lib, une obscure astuce de configuration… Dans le feu de l’action, on se réjouit, mais quelques jours après, souvent, on oublie. C’est dans ces moments-là que l’on se dit que l’on aurait bien fait de prendre des notes."
-draft = false
-in_search_index = true
-[taxonomies]
-categories = ["informatique"]
-tags = ["console"]
-[extra]
-+++
+---
+date: "2018-11-07"
+description: 'Une chose que j’aime particulièrement dans mon métier de développeur,
+  c’est que l’on apprend tout le temps : un pattern, une lib, une obscure astuce de
+  configuration… Dans le feu de l’action, on se réjouit, mais quelques jours après,
+  souvent, on oublie. C’est dans ces moments-là que l’on se dit que l’on aurait bien
+  fait de prendre des notes.'
+draft: false
+extra: {}
+in_search_index: true
+slug: journal-intime-dun-developpeur
+taxonomies:
+  categories:
+  - informatique
+  tags:
+  - console
+title: Journal intime d'un développeur
+---
 
 C’est une bonne habitude que de noter toutes ces petites choses apprises au jour le jour. Pourtant ce n’est pas toujours facile d’intégrer un moyen de prise de notes dans ce quotidien. J’ai déjà essayé pas mal d’outils : [jrnl](http://jrnl.sh/), mais je n’ai jamais réussi à me souvenir des commandes, [boostnote](https://boostnote.io/) que je n’utilise pas lorsque je code, car c’est une fenêtre en plus, ou encore [gist](https://gist.github.com/) mais je n’arrive pas à le tenir organisé…
 Et puis j'ai reçu ce lien [did.txt file](https://theptrk.com/2018/07/11/did-txt-file/) dans ma newsletter [changelog](https://changelog.com/).

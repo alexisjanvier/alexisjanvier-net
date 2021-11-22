@@ -1,16 +1,20 @@
-+++
-title="Mocking an API with Polly.js"
-slug="mocking-an-api-with-pollyjs"
-date = 2020-01-23
-description="It is never easy to set up functional tests involving calls to an external API. Polly.js is a useful tool to know when you need to mock calls to an API."
-draft = false
-in_search_index = true
-[taxonomies]
-categories = ["informatique"]
-tags = ["test", "api"]
-[extra]
-marmelab="https://marmelab.com/blog/2020/01/23/mocking-an-api-with-pollyjs.html"
-+++
+---
+date: "2020-01-23"
+description: It is never easy to set up functional tests involving calls to an external
+  API. Polly.js is a useful tool to know when you need to mock calls to an API.
+draft: false
+extra:
+  marmelab: https://marmelab.com/blog/2020/01/23/mocking-an-api-with-pollyjs.html
+in_search_index: true
+slug: mocking-an-api-with-pollyjs
+taxonomies:
+  categories:
+  - informatique
+  tags:
+  - test
+  - api
+title: Mocking an API with Polly.js
+---
 
 We've had that problem several times: writing functional tests for an application that depends on calls to an API. 
 

@@ -1,7 +1,7 @@
-+++
-title="cv"
-path="cv"
-template = "cv.html"
-+++
+---
+path: cv
+template: cv.html
+title: cv
+---
 
 # Mon cv

@@ -1,15 +1,20 @@
-+++
-title="Visual Studio Live Share, c’est de la balle !"
-slug="visual-studio-live-share-cest-de-la-balle"
-date = 2019-01-31
-description="Cela fait maintenant plus de deux ans que je travaille en full remote. Une des questions récurrentes lorsque j’en discute concerne les outils que j’utilise pour travailler avec mes collègues. Et bien en voici un vraiment très bon : Visual Studio Live Share."
-draft = false
-in_search_index = true
-[taxonomies]
-categories = ["informatique"]
-tags = ["devops"]
-[extra]
-+++
+---
+date: "2019-01-31"
+description: 'Cela fait maintenant plus de deux ans que je travaille en full remote.
+  Une des questions récurrentes lorsque j’en discute concerne les outils que j’utilise
+  pour travailler avec mes collègues. Et bien en voici un vraiment très bon : Visual
+  Studio Live Share.'
+draft: false
+extra: {}
+in_search_index: true
+slug: visual-studio-live-share-cest-de-la-balle
+taxonomies:
+  categories:
+  - informatique
+  tags:
+  - devops
+title: Visual Studio Live Share, c’est de la balle !
+---
 
 On a récemment fait une journée de hackday avec mon confrère [Kevin](https://twitter.com/Kmaschta?lang=fr) (sur Rust et Webassembly, post de blog à venir). Le truc, c’est que Kevin est à Nancy, et moi à Caen. Du coup, on pouvait soit partir chacun de son côté sur un bout du projet, soit faire le hackday en pair-programming. Mais le partage d’écran via [Framatalk](https://framatalk.org/accueil/fr/) toute une journée, c’est un peu frustrant. 
 

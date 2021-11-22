@@ -1,16 +1,19 @@
-+++
-title="FOSS interview : stretch-discord avec Maxime et Pierre"
-slug="foss-interview-stretch-discord-avec-maxime-et-pierre"
-date = 2021-03-08
-description="Dans cette vidéo, Maxime et Pierre nous parlent du projet open-source stretch-discord"
-draft = false
-in_search_index = true
-[taxonomies]
-categories = ["informatique"]
-tags = ["foss"]
-[extra]
-marmelab="https://marmelab.com/blog/2021/03/08/foss-interview-stretch-discord-avec-maxime-et-pierre.html"
-+++
+---
+date: "2021-03-08"
+description: Dans cette vidéo, Maxime et Pierre nous parlent du projet open-source
+  stretch-discord
+draft: false
+extra:
+  marmelab: https://marmelab.com/blog/2021/03/08/foss-interview-stretch-discord-avec-maxime-et-pierre.html
+in_search_index: true
+slug: foss-interview-stretch-discord-avec-maxime-et-pierre
+taxonomies:
+  categories:
+  - informatique
+  tags:
+  - foss
+title: 'FOSS interview : stretch-discord avec Maxime et Pierre'
+---
 
 Les mainteneurs de projets open source sont sûrement les mieux placés pour en parler. Dans cette série d'interviews vidéos, des développeurs viennent présenter un projet sous licence libre créé et maintenu chez Marmelab. C'est aussi l'occasion d'échanger avec eux sur leur rapport au monde du logiciel libre.
 

@@ -1,16 +1,20 @@
-+++
-title="Running React Router v4, Redux Saga, SSR and Code Splitting together"
-slug="running-react-router-v4,-redux-saga,-ssr-and-code-splitting-together"
-date = 2017-10-17
-description="Code splitting and server-side rendering are two ways of making a React app fast. Let's put them together in practice, with Redux, Sagas and React Router V4."
-draft = false
-in_search_index = true
-[taxonomies]
-categories = ["informatique"]
-tags = ["javascript"]
-[extra]
-marmelab="https://marmelab.com/blog/2017/10/17/code-splitting.html"
-+++
+---
+date: "2017-10-17"
+description: Code splitting and server-side rendering are two ways of making a React
+  app fast. Let's put them together in practice, with Redux, Sagas and React Router
+  V4.
+draft: false
+extra:
+  marmelab: https://marmelab.com/blog/2017/10/17/code-splitting.html
+in_search_index: true
+slug: running-react-router-v4,-redux-saga,-ssr-and-code-splitting-together
+taxonomies:
+  categories:
+  - informatique
+  tags:
+  - javascript
+title: Running React Router v4, Redux Saga, SSR and Code Splitting together
+---
 
 We are currently migrating a customer project from a Symfony application to a React application with server-side rendering. Out stack includes React Router V3, Redux, and Redux-Saga. But as features add up, the code becomes harder and harder to maintain, and the routing more and more complex. 
 

@@ -1,14 +1,18 @@
-+++
-title="Utiliser une base SQlite dans react-admin"
-slug="utiliser-une-base-sqlite-dans-react-admin"
-date = 2021-10-14
-description="Nous sommes souvent amenés à mettre une API en face d'une base de données. Utilisons cette base de données directement depuis le navigateur, par exemple avec react-admin !"
-draft = false
-in_search_index = true
-[taxonomies]
-categories = ["informatique"]
-tags = ["foss"]
-+++
+---
+date: "2021-10-14"
+description: Nous sommes souvent amenés à mettre une API en face d'une base de données.
+  Utilisons cette base de données directement depuis le navigateur, par exemple avec
+  react-admin !
+draft: false
+in_search_index: true
+slug: utiliser-une-base-sqlite-dans-react-admin
+taxonomies:
+  categories:
+  - informatique
+  tags:
+  - foss
+title: Utiliser une base SQlite dans react-admin
+---
 
 Cela fait un moment que le cherche un moyen de partager facilement une base de données pour un petit projet ne justifiant pas la mise en place d'un "vrai" serveur de base de données. Jusque là, j'envisageais de tester un DBaaS un peu innovant, du genre [PlanetScale](https://planetscale.com/), [Prisma](https://www.prisma.io/), [Back4App](https://www.back4app.com/) ou [OrbitDB](https://orbitdb.org/). Mais si l'envie de tester ces services est toujours là, cela ne répondait pas vraiment à mon objectif. Cela ne ferait que déplacer le "vrai" serveur vers un tiers, ce que ne justifiait pas en termes d'infrastructure (et donc d'impact ... écologique) mon petit projet.
 

@@ -1,7 +1,10 @@
 ---
 date: "2014-04-02"
-tags: ["go", "templates", "hugo"]
-title: "(Hu)go Template Primer"
+tags:
+- go
+- templates
+- hugo
+title: (Hu)go Template Primer
 toc: true
 ---
 

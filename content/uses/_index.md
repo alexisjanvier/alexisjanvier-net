@@ -1,8 +1,8 @@
-+++
-title = "uses"
-path = "uses"
-template = "uses.html"
-+++
+---
+path: uses
+template: uses.html
+title: uses
+---
 
 # Uses
 

@@ -1,14 +1,17 @@
-+++
-title="Utiliser des balises ESI avec Next.js"
-slug="utiliser-des-balises-esi-aves-next-js"
-date = 2021-11-01
-description="Comment améliorer encore plus le temps de réponse d'un site basé sur Next.js ? Avec des ESI !"
-draft = false
-in_search_index = true
-[taxonomies]
-categories = ["informatique"]
-tags = ["web"]
-+++
+---
+date: "2021-11-01"
+description: Comment améliorer encore plus le temps de réponse d'un site basé sur
+  Next.js ? Avec des ESI !
+draft: false
+in_search_index: true
+slug: utiliser-des-balises-esi-aves-next-js
+taxonomies:
+  categories:
+  - informatique
+  tags:
+  - web
+title: Utiliser des balises ESI avec Next.js
+---
 
 Récemment, nous avons migré un site React s'appuyant sur un système de SSR "maison" vers Next.js. Et nous ne regrettons pas ce choix tant l'expérience développeur est concluante, tout en apportant un gain de performance et en nous libérant des difficultés de monter de version de l'ancienne stack. Mais nous restions confrontés à un problème. 
 

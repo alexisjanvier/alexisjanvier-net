@@ -1,16 +1,19 @@
-+++
-title="Using An SQLite Database Live In React-Admin"
-slug="using-an-sqlite-database-live-in-react-admin"
-date = 2021-10-14
-description="To use a database in a web app, we have to build an API. But what if we could use a database directly from the browser?"
-draft = false
-in_search_index = true
-[taxonomies]
-categories = ["informatique"]
-tags = ["foss"]
-[extra]
-marmelab="https://marmelab.com/blog/2021/10/14/using-an-sqlite-database-live-in-react-admin.html"
-+++
+---
+date: "2021-10-14"
+description: To use a database in a web app, we have to build an API. But what if
+  we could use a database directly from the browser?
+draft: false
+extra:
+  marmelab: https://marmelab.com/blog/2021/10/14/using-an-sqlite-database-live-in-react-admin.html
+in_search_index: true
+slug: using-an-sqlite-database-live-in-react-admin
+taxonomies:
+  categories:
+  - informatique
+  tags:
+  - foss
+title: Using An SQLite Database Live In React-Admin
+---
 
 I've been looking for a way to easily share a database for a small project that doesn't warrant a "real" database server. Until now, I was thinking of trying a slightly innovative DBaaS, like [PlanetScale](https://planetscale.com/), [Prisma](https://www.prisma.io/), [Back4App](https://www.back4app.com/) or [OrbitDB](https://orbitdb.org/). But if the interest to test these services is still there, it didn't really answer my goal. It would only move the "real" server to a third party, which is not justified in terms of infrastructure (and therefore ecological impact) for my small project.
 

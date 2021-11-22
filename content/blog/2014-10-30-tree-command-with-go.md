@@ -1,16 +1,21 @@
-+++
-title="Une commande tree plus efficace grâce au Go"
-slug="une-commande-tree-plus-efficace-grace-au-go"
-date = 2014-10-30
-description="Peut-on facilement et rapidement améliorer la classique commande `tree` grâce au langage Go ? Nancy étant dans les cartons, c'est Paris qui s'y colle pour cette journée de Hackday."
-draft = false
-in_search_index = true
-[taxonomies]
-categories = ["informatique"]
-tags = ["go", "console"]
-[extra]
-marmelab="https://marmelab.com/blog/2014/10/30/tree-command-with-go.html"
-+++
+---
+date: "2014-10-30"
+description: Peut-on facilement et rapidement améliorer la classique commande `tree`
+  grâce au langage Go ? Nancy étant dans les cartons, c'est Paris qui s'y colle pour
+  cette journée de Hackday.
+draft: false
+extra:
+  marmelab: https://marmelab.com/blog/2014/10/30/tree-command-with-go.html
+in_search_index: true
+slug: une-commande-tree-plus-efficace-grace-au-go
+taxonomies:
+  categories:
+  - informatique
+  tags:
+  - go
+  - console
+title: Une commande tree plus efficace grâce au Go
+---
 
 Chez Marmelab, un hackday c'est comme une semaine d'intégration, mais sur une journée : une hypothèse définie le matin, un produit fonctionnel et testé le soir sur une nouvelle techno ; et aussi un post de blog pour en parler, dans la nuit. Le plus, c'est qu'on est par équipes.
 Pour ce hackday un peu spécial, pour cause de Hack Dayménagement à Nancy, l'équipe parisienne planche sur la reproduction, voir l'amélioration de la commande [tree](http://fr.wikipedia.org/wiki/Commande_tree) bien connue.
