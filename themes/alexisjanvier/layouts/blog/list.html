@@ -1,0 +1,6 @@
+{{ define "main" }}
+<h2>{{ .Title }}</h2>
+{{ range .Pages }}
+    {{ partial "blog-item.html" . }}
+{{ end }}
+{{ end }}
