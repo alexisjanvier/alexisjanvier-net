@@ -10,3 +10,13 @@ theme = 'alexisjanvier'
   category = 'categories'
   series = 'series'
   tag = 'tags'
+[related]
+  includeNewer = true
+  threshold = 100
+  toLower = false
+[[related.indices]]
+  name = 'tags'
+  weight = 100
+[[related.indices]]
+  name = 'keywords'
+  weight = 60

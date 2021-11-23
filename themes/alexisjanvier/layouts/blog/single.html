@@ -16,34 +16,18 @@
         {{ .Content }}
     </div>
 </article>
+{{ $related := .Site.RegularPages.Related . | first 3 }}
+{{ with $related }}
 <section class="related-posts">
-    <h1 class="section-title">Related posts</h1>
+    <h1 class="section-title">Articles connexes</h1>
     <ul>
+        {{ range . }}
         <li>
-            <a href="/personal-notes/2021/04/08/my-favourite-books-of-2020/">My favourite books of
-                2020</a>
-            <span class="light-font"> — 08 Apr 2021</span>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <span class="light-font"> — {{ .Date | time.Format ":date_full" }}</span>
         </li>
-        <li>
-            <a href="/personal-notes/2020/01/18/my-favourite-books-of-2019/">My favourite books of
-                2019</a>
-            <span class="light-font"> — 18 Jan 2020</span>
-        </li>
-        <li>
-            <a href="/personal-notes/2019/10/16/would-you-do-your-job-for-free/">Would you do your
-                job for free?</a>
-            <span class="light-font"> — 16 Oct 2019</span>
-        </li>
-        <li>
-            <a href="/personal-notes/2019/01/18/my-favourite-books-of-2018/">My favourite books of
-                2018</a>
-            <span class="light-font"> — 18 Jan 2019</span>
-        </li>
-        <li>
-            <a href="/articles/2018/10/25/2-questions-we-ask-designers-and-why/">2 questions we ask
-                designers in job interviews</a>
-            <span class="light-font"> — 25 Oct 2018</span>
-        </li>
+        {{ end }}
     </ul>
 </section>
+{{ end }}
 {{ end }}
