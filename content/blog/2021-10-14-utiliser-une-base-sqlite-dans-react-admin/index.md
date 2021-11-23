@@ -1,8 +1,6 @@
 ---
 date: "2021-10-14"
-description: Nous sommes souvent amenés à mettre une API en face d'une base de données.
-  Utilisons cette base de données directement depuis le navigateur, par exemple avec
-  react-admin !
+description: Pour utiliser une base de données dans une application web, nous devons construire une API. Mais que se passerait-il si nous pouvions utiliser une base de données directement depuis le navigateur ?
 draft: false
 in_search_index: true
 slug: utiliser-une-base-sqlite-dans-react-admin
@@ -13,11 +11,11 @@ tags:
 title: Utiliser une base SQlite dans react-admin
 ---
 
+{{< quoteright "Cet article part du principe que nous allons interroger la base de données à partir d'un simple serveur statique. Nous ne pourrons donc faire que des opérations de lecture, ce qui est ce dont j'ai réellement besoin, mais peut-être pas pour tous les lecteurs de ces lignes." >}}
+
 Cela fait un moment que le cherche un moyen de partager facilement une base de données pour un petit projet ne justifiant pas la mise en place d'un "vrai" serveur de base de données. Jusque là, j'envisageais de tester un DBaaS un peu innovant, du genre [PlanetScale](https://planetscale.com/), [Prisma](https://www.prisma.io/), [Back4App](https://www.back4app.com/) ou [OrbitDB](https://orbitdb.org/). Mais si l'envie de tester ces services est toujours là, cela ne répondait pas vraiment à mon objectif. Cela ne ferait que déplacer le "vrai" serveur vers un tiers, ce que ne justifiait pas en termes d'infrastructure (et donc d'impact ... écologique) mon petit projet.
 
 Alors certes, qui dit petit projet dit petite base de données facilement exportable en json ou en csv. Mais je suis tombé sur cet excellent article de [phiresky](https://github.com/phiresky/), ["Hosting SQLite databases on Github Pages"](https://phiresky.github.io/blog/2021/hosting-sqlite-databases-on-github-pages/), qui m'a bien donné envie de tester cette solution à base [d'une vraie base de données](https://antonz.org/sqlite-is-not-a-toy-database/) plutôt que de partir sur de simples fichiers d'export. Et je vais faire le test avec [reac-admin](https://marmelab.com/react-admin/).
-
-> Avertissement : si SQlite est une vraie base de données, la suite de cet article part du principe que l'on va requêter sur la base depuis un simple serveur statique. Nous ne pourrons donc faire **que des opérations de lecture**, ce qui correspond bien à mon besoin, mais peut-être pas à tous les lecteurs de ces lignes.
 
 ## Un client SQLite pour le web
 
@@ -194,7 +192,7 @@ export const getDbDescription = async dbClient => {
 
 Ce qui donne dans la console :
 
-![la sortie de getDbDescription dans la console du navigateur](dbDescription.jpg)
+{{< postlargeimage "dbDescription.jpg" "La sortie de getDbDescription dans la console du navigateur" >}}
 
 Rien n'empêche d'imaginer de mettre en place à partir de ces informations un mécanisme permettant de générer à la voler les `ressources` react-admin convenablement configurées, à l'image de ce que fait le composant `<AdminGuesser />` [d'API Platform](https://github.com/api-platform/admin).
 

@@ -13,13 +13,13 @@ tags:
 title: 'FOSS interview : React-admin avec Gildas'
 ---
 
+{{< quoteright "… un framework en React, comme son nom l'indique, qui permet de créer des interfaces d'administration." >}}
+
 Les mainteneurs de projets open source sont sûrement les mieux placés pour en parler. Dans cette série d’interviews vidéos, des développeurs viennent présenter un projet sous licence libre créé et maintenu chez Marmelab. C'est aussi l'occasion d'échanger avec eux sur leur rapport au monde du logiciel libre.
 
 Pour cette nouvelle vidéo, nous recevons [Gildas](https://twitter.com/gildaspk), l'un des mainteneurs du projet **React-admin**
 
-> « … un framework en React, comme son nom l'indique, qui permet de créer des interfaces d'administration. »
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Cdgkp4ajI0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{{< videoyt Cdgkp4ajI0s "FOSS interview : React-admin avec Gildas">}}
 
 ## Les liens
 

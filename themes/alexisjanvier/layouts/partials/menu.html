@@ -1,7 +1,11 @@
 <div class="menu-list">
-    <a href="/" class='active'>Accueil</a>
-    <a href="/blog">Blog</a>
-    <a href="/">Talks</a>
-    <a href="/">Uses</a>
-    <a href="/">À propos</a>
+    
+    {{ $current := . }}
+    {{ range .Site.Menus.nav }}
+    {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+    {{ $active = or $active (eq .Name $current.Title) }}
+    {{ $active = or $active (and (eq .Name "Blog") (eq $current.Section "post")) }}
+    {{ $active = or $active (and (eq .Name "Tags") (eq $current.Section "tags")) }}
+    <a href="{{ .URL }}" {{ if $active }}aria-current="page" class="active"{{ end }} >{{ .Name }}</a>
+    {{ end }}
 </div>

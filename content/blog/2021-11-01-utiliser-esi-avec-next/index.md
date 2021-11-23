@@ -20,11 +20,11 @@ La question est donc : comment éviter d'appeler la route d'API de ce footer à 
 
 ## Mise en cache de l'appel à l'API
 
+{{< quoteright "Idéalement, ça aurait été top que Next puisse rendre un composant spécifique avec un cache différent de celui de la page qui l'appelle. Un genre de ESI du SSR." >}}
+
 La première solution évidente est de mettre en cache au niveau du serveur Next cet appel à la route d'API du footer.
 
-C'est sans aucun doute une très bonne solution, maitrisée et éprouvée. Mais nous l'avons gardé comme seconde option, car lors de nos discussions sur ce problème, nous avions formulé ce souhait :
-
-> *Idéalement, ça aurait été top que Next puisse rendre un composant spécifique avec un cache différent de celui de la page qui l'appelle. Un genre de ESI du SSR.*
+C'est sans aucun doute une très bonne solution, maitrisée et éprouvée. Mais nous l'avons gardé comme seconde option, car lors de nos discussions sur ce problème, nous avions formulé le souhait que Next puisse rendre un composant spécifique avec un cache différent de celui de la page qui l'appelle. Un genre de ESI du SSR.
 
 Et justement, il existe un composant pour cela : [react-esi](https://github.com/dunglas/react-esi)
 
@@ -92,7 +92,7 @@ export default Footer;
 
 C'est l'occasion de faire une première remarque : `reac-esi` n'utilise pas de hook, mais un *bon vieux* HOC et une classe React. Alors ce n'est sans doute pas à la mode, mais cela reste un chouette pattern, et pour les plus inquiets d'entre nous, rappelons ce que dit la [documentation de React](https://reactjs.org/docs/hooks-intro.html#gradual-adoption-strategy) :
 
-> **TLDR: There are no plans to remove classes from React.**
+> TLDR: There are no plans to remove classes from React.
 
 La partie front est terminée. Mais comme nous le verrons dans la partie suivante de cet article, pour qu'un composant puisse être mis en cache ESI, il faut également mettre en place une route spécifique permettant le rendu de ce composant indépendamment du reste de la page.
 
@@ -134,9 +134,9 @@ app.prepare().then(() => {
 });
 ```
 
-C'est donc le middleware `serveFragment` qui va prendre en charge cette nouvelle route `path`. Par défaut, cette route sera accessible en `/_fragment`, mais on peut la configurer via une variable d'environnement `REACT_ESI_PATH`.
+{{< quoteright "Attention, pour que ces modifications soient prises en compte, vous ne devez plus lancer l'application de développement avec un `next dev`, mais avec un `node src/server.js`" >}}
 
-**Attention, pour que ces modifications soient prises en compte, vous ne devez plus lancer l'application de développement avec un `next dev`, mais avec un `node src/server.js` !**
+C'est donc le middleware `serveFragment` qui va prendre en charge cette nouvelle route `path`. Par défaut, cette route sera accessible en `/_fragment`, mais on peut la configurer via une variable d'environnement `REACT_ESI_PATH`.
 
 Il reste une dernière petite chose à faire : ajouter l'entête HTTP `Surrogate-Control` déclarant que notre réponse inclue des ESI. On peut ajouter cet entête dans le fichier `server.js` que nous venons de voir, ou bien les ajouter à la configuration de [Next](https://nextjs.org/docs/api-reference/next.config.js/headers) :
 
@@ -178,14 +178,13 @@ En effet, la phase de build de next implique une transpilation et une mise en bu
   }
 }
 ```
-
-**Attention bis, pour que les modifications du serveur Next soient prises en compte, vous ne devez plus lancer l'application de production avec un `next start`, mais avec un `node dist/server.js` !**
+{{< quoteright "Attention bis, pour que les modifications du serveur Next soient prises en compte, vous ne devez plus lancer l'application de production avec un `next start`, mais avec un `node dist/server.js`" >}}
 
 Il reste un dernier point à traiter avant de pouvoir tester la version de production : mettre en place un serveur de cache HTTP devant le serveur Next.js, par exemple un Varnish. La solution la plus simple sur un poste de développement est d'utiliser Docker et Docker Compose. Vous trouverez un exemple de configuration sur le dépôt Github d'illustration de cet article.
 
 Et voici maintenant schématiquement le fonctionnement de notre implémentation de footer mis en cache :
 
-![Footer en ESI](react-esi.excalidraw.png)
+{{< postlargeimage "react-esi.excalidraw.png" "Fonctionnement schématique du footer en ESI">}}
 
 (1) Le serveur Next ne va pas renvoyer le rendu du composant `Footer`, mais une balise ESI :
 	
@@ -229,6 +228,8 @@ Vous trouverez des exemples de configuration de Docker Compose sur le [dépôt d
 ## Conclusion
 
 Force est de constater que l'utilisation d'ESI répond parfaitement à la problématique initiale. 
+
+{{< quoteright " Du bon vieux HTTP (la spécification 1.0 du langage ESI date de 2001, Varnish de 2006). On aurait presque l'impression de faire du low web." >}}
 
 La solution consistant à mettre en cache côté API aurait sans doute aussi répondu au besoin. Et peut-être que lorsque les React Server Components sortiront de leur phase d'expérimentation, ils seront nativement supportés par Next.js et pourront offrir une réponse Next.js idiomatique pour cette fonctionnalité.
 

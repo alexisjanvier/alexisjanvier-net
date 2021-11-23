@@ -1,14 +1,17 @@
 <article class="post">
     <h1 class="section-title">Dernier post</h1>
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline" style="max-width: 8em">I need a break
+        <h1 class="post-title" itemprop="name headline" style="max-width: 8em">{{ .Title }}
         </h1>
-        <p class="post-meta"><time datetime="2021-10-13T19:56:54+00:00"
-                itemprop="datePublished">13 Oct 2021</time>, 2 min read — <a
-                class="tag_list_link" href="/tag/day-to-day/">Day-to-day</a> </p>
+        <p class="post-meta">
+            <time datetime="{{ .Date }}" itemprop="datePublished">
+                {{ .Date | time.Format ":date_full" }}
+            </time>- {{ .ReadingTime }} min de lecture -  
+            {{ range $key, $value := .Params.tags }}
+                <a class="tag_list_link" href="/tags/{{ $value | urlize }}">{{ $value }}</a>{{ if ne $key (sub (len $.Params.tags) 1) }}, {{ else }}{{ end }}
+            {{ end }}
+        </p>
     </header>
-    <p class="attention-grabber">I should be resting instead of writing this as it’s been weeks
-        since I started feeling like shit again. I’ve been juggling my full-time job, my
-        personal projects, my private life, and failing at it, for almost a year now.</p>
-    <a href="/personal-notes/2021/10/13/i-need-a-break/">Continue reading →</a>
+    <p class="attention-grabber">{{ .Params.Description }}</p>
+    <a href="{{ .RelPermalink }}">Continuez à lire →</a>
 </article>

@@ -14,13 +14,15 @@ tags:
 title: 'FOSS interview : stretch-discord avec Maxime et Pierre'
 ---
 
+{{< quoteright "… un bot Discord comme il en existe plein qui poste des exercices d'étirements une fois toutes les heures." >}}
+
 Les mainteneurs de projets open source sont sûrement les mieux placés pour en parler. Dans cette série d'interviews vidéos, des développeurs viennent présenter un projet sous licence libre créé et maintenu chez Marmelab. C'est aussi l'occasion d'échanger avec eux sur leur rapport au monde du logiciel libre.
 
 Pour cette seconde vidéo, nous acceuillons [Maxime](https://twitter.com/rmaximedev) et [Pierre](https://github.com/HALLERPierre), mainteneurs du projet **stretch-discord**
 
 > « … un bot Discord comme il en existe plein qui poste des exercices d'étirements une fois toutes les heures. »
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1kG89jrbUpA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{{< videoyt 1kG89jrbUpA "FOSS interview : stretch-discord avec Maxime et Pierre">}}
 
 ## Les liens
 

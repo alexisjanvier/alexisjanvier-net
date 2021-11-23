@@ -1,15 +1,23 @@
 {{ define "main" }}
 <div class="home">
-  {{ partial "latest-blog-item.html" . }}
+  {{$posts := ($.Site.GetPage "section" "blog").Pages.ByPublishDate.Reverse}}
+  {{ range first 1 $posts }}
+    {{ partial "latest-blog-item.html" . }}
+  {{ end }}
   <section class="post-list">
       <h1 class="section-title">Articles récents</h1>
-      {{ partial "blog-item-fake.html" . }}
-      {{ partial "blog-item-fake.html" . }}
+      {{ range $elem_index, $elem_val := first 3 $posts }}
+        {{ with $elem_index }}
+          {{ partial "blog-item.html" $elem_val }}
+        {{ end }}
+      {{ end }}
   </section>
   <section class="post-list">
     <h1 class="section-title">Talks récents</h1>
-    {{ partial "blog-item-fake.html" . }}
-    {{ partial "blog-item-fake.html" . }}
+    {{$talks := ($.Site.GetPage "section" "talks").Pages.ByPublishDate.Reverse}}
+    {{ range first 2 $talks }}
+      {{ partial "blog-item.html" . }}
+    {{ end }}
 </section>
 </div>
 {{ end }}

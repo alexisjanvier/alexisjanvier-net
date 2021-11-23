@@ -20,3 +20,32 @@ theme = 'alexisjanvier'
 [[related.indices]]
   name = 'keywords'
   weight = 60
+[imaging]
+# Default resample filter used for resizing. Default is Box,
+# a simple and fast averaging filter appropriate for downscaling.
+# See https://github.com/disintegration/imaging
+resampleFilter = "CatmullRom"
+# Default JPEG or WebP quality setting. Default is 75.
+quality = 80
+# Default hint about what type of image. Currently only used for WebP encoding.
+# Default is "photo".
+# Valid values are "picture", "photo", "drawing", "icon", or "text".
+hint = "text"
+anchor = "smart"
+[menu]
+[[menu.nav]]
+  name = 'Accueil'
+  url = '/'
+  weight = 1
+[[menu.nav]]
+  name = 'Blog'
+  url = '/blog'
+  weight = 2
+[[menu.nav]]
+  name = 'Talks'
+  url = '/talks'
+  weight = 3
+[[menu.nav]]
+  name = 'A propos'
+  url = '/a-propos'
+  weight = 4

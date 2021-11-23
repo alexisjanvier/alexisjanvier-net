@@ -1463,6 +1463,12 @@ h6 {
   margin-bottom: 0.78125rem;
   font-weight: 600;
 }
+article.post code {
+  font-family: monaco, consolas, monospace;
+  padding: 1px 3px;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
 @media screen and (min-width: 64em) {
   article.post h2 {
     margin-top: 3.125rem;
@@ -1760,10 +1766,7 @@ article p {
   font-family: Georgia, serif;
   font-weight: 400;
   font-style: normal;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
+  margin-bottom: 1.632342rem;
 }
 
 article .post-meta {
