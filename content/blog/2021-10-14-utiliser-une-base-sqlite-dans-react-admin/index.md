@@ -6,10 +6,9 @@ description: Nous sommes souvent amenés à mettre une API en face d'une base de
 draft: false
 in_search_index: true
 slug: utiliser-une-base-sqlite-dans-react-admin
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - foss
 title: Utiliser une base SQlite dans react-admin
 ---

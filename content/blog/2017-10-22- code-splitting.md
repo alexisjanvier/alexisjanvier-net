@@ -8,10 +8,9 @@ draft: false
 extra: {}
 in_search_index: true
 slug: rr4-ssr-redux-code-splitting-dans-un-bateau
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - javascript
 title: React Router v4, SSR, Redux Saga et Code Splitting sont dans un bateau
 ---

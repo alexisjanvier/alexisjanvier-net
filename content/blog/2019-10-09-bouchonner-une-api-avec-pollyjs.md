@@ -8,10 +8,9 @@ draft: false
 extra: {}
 in_search_index: true
 slug: bouchonner-une-api-avec-pollyjs
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - api
   - test
 title: Bouchonner une API avec Polly.js

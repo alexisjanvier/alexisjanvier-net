@@ -6,10 +6,9 @@ draft: false
 extra: {}
 in_search_index: true
 slug: road_to_caen_le_projet
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - projet
 title: Road to Caen
 ---

@@ -6,10 +6,9 @@ draft: false
 extra: {}
 in_search_index: true
 slug: les-cartes-techniques
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - projet
 title: Les cartes techniques
 ---

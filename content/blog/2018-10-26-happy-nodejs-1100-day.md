@@ -6,10 +6,9 @@ draft: false
 extra: {}
 in_search_index: true
 slug: happy-nodejs-1100-day
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - javascript
 title: Happy Node.js 11.0.0 Day
 ---

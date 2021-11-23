@@ -6,10 +6,9 @@ draft: false
 extra: {}
 in_search_index: true
 slug: un-serveur-en-deux-deux
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - devops
 title: Un serveur en deux deux
 ---

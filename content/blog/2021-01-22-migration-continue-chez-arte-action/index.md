@@ -6,10 +6,9 @@ extra:
   marmelab: https://marmelab.com/blog/2021/01/22/migration-continue-chez-arte-action.html
 in_search_index: true
 slug: migration-continue-chez-arte-action
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - architecture
   - projet
 title: 'Histoire d''une migration chez Arte, partie 3/3 : action'

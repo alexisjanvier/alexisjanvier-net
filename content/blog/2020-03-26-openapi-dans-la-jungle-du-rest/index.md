@@ -8,10 +8,9 @@ extra:
   marmelab: https://marmelab.com/blog/2020/03/26/openapi-dans-la-jungle-du-rest.html
 in_search_index: true
 slug: openapi-dans-la-jungle-du-rest
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - api
 title: OpenAPI dans la jungle du REST
 ---

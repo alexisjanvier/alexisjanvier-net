@@ -6,10 +6,9 @@ extra:
   marmelab: https://marmelab.com/blog/2021/02/26/foss-interview-comfygure-avec-kevin.html
 in_search_index: true
 slug: foss-interview-comfygure-avec-kevin
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - foss
 title: 'FOSS interview : comfygure avec Kevin'
 ---

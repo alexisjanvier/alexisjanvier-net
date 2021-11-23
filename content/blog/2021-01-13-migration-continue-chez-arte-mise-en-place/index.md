@@ -6,10 +6,9 @@ extra:
   marmelab: https://marmelab.com/blog/2021/01/13/migration-continue-chez-arte-mise-en-place.html
 in_search_index: true
 slug: migration-continue-chez-arte-mise-en-place
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - architecture
   - projet
 title: 'Histoire d''une migration chez Arte, partie 2/3 : la mise en place'

@@ -8,10 +8,9 @@ extra:
   marmelab: https://marmelab.com/blog/2017/03/21/decouvrir-les-service-workers.html
 in_search_index: true
 slug: decouvrir-les-service-workers
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - javascript
 title: Découvrir les service workers
 ---

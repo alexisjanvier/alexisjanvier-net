@@ -7,10 +7,9 @@ extra:
   marmelab: https://marmelab.com/blog/2020/04/17/openapi-un-contrat-pour-vos-apis.html
 in_search_index: true
 slug: openapi-un-contrat-pour-vos-apis
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - api
 title: 'OpenAPI : un contrat pour vos API.s'
 ---
@@ -132,7 +131,7 @@ paths: {
         - Cette liste est filtrable et triable.
         - Un exemple de liste en ligne : [Les pétroleuses](http://roller-derby-caen.fr/les-petroleuses/)
       operationId: getPlayerList
-      tags:
+    tags:
         - Players
       parameters:
         - name: filter
@@ -228,7 +227,7 @@ Player:
   get:
     description: Informations sur un.e joueur.euse.
     operationId: getPlayer
-    tags:
+  tags:
       - Players
     parameters:
       - name: playerId

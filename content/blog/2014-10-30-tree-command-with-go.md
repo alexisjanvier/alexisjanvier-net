@@ -8,10 +8,9 @@ extra:
   marmelab: https://marmelab.com/blog/2014/10/30/tree-command-with-go.html
 in_search_index: true
 slug: une-commande-tree-plus-efficace-grace-au-go
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - go
   - console
 title: Une commande tree plus efficace grâce au Go

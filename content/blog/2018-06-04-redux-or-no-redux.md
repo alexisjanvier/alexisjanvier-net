@@ -6,10 +6,9 @@ draft: false
 extra: {}
 in_search_index: true
 slug: avec-ou-sans-redux
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - javascript
 title: Avec ou sans Redux ?
 ---

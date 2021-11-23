@@ -5,11 +5,10 @@ description: Comment améliorer encore plus le temps de réponse d'un site basé
 draft: false
 in_search_index: true
 slug: utiliser-des-balises-esi-aves-next-js
-taxonomies:
-  categories:
-  - informatique
-  tags:
-  - web
+categories:
+- informatique
+tags:
+- web
 title: Utiliser des balises ESI avec Next.js
 ---
 

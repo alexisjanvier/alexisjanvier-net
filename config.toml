@@ -1,7 +1,12 @@
 baseURL = 'https://alexisjanvier.net/'
 languageCode = 'fr'
+defaultContentLanguage = 'fr'
 title = 'Alexis Janvier'
 theme = 'alexisjanvier'
 [params]
   description = 'Internet is not dead. It just smells funny.'
   homeMetaContent = 'Internet is not dead. It just smells funny.'
+[taxonomies]
+  category = 'categories'
+  series = 'series'
+  tag = 'tags'

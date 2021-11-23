@@ -8,10 +8,9 @@ extra:
   marmelab: https://marmelab.com/blog/2020/07/02/manage-your-jwt-react-admin-authentication-in-memory.html
 in_search_index: true
 slug: handling-jwt-in-admin-apps-the-right-way
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - foss
   - security
 title: Handling JWT in Admin Apps the Right Way

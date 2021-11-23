@@ -7,10 +7,9 @@ extra:
   marmelab: https://marmelab.com/blog/2021/03/08/foss-interview-stretch-discord-avec-maxime-et-pierre.html
 in_search_index: true
 slug: foss-interview-stretch-discord-avec-maxime-et-pierre
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - foss
 title: 'FOSS interview : stretch-discord avec Maxime et Pierre'
 ---

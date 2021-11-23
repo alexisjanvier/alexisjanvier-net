@@ -9,10 +9,9 @@ extra:
   marmelab: https://marmelab.com/blog/2016/02/22/a-usefull-windows-console.html
 in_search_index: true
 slug: is-it-snobbery-to-want-a-real-console-on-windows
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - console
 title: Is it snobbery to want a real console on Windows?
 ---

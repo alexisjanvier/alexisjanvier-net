@@ -1,6 +1,11 @@
-<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-<p class="post-meta"><time class="archive_list_post_date" datetime='2021-04-08'>08 Apr
-    2021</time>, 9 min read — <a class="tag_list_link" href="/tag/startup/">Startup</a>,
-<a class="tag_list_link" href="/tag/productivity/">Productivity</a>, <a
-    class="tag_list_link" href="/tag/day-to-day/">Day-to-day</a>, <a
-    class="tag_list_link" href="/tag/books/">Books</a> </p>
+<h2>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+</h2>
+<p class="post-meta">
+    <time datetime="{{ .Date }}" itemprop="datePublished">
+        {{ .Date | time.Format ":date_full" }}
+    </time>- {{ .ReadingTime }} min de lecture -  
+    {{ range $key, $value := .Params.tags }}
+        <a class="tag_list_link" href="/tags/{{ $value | urlize }}">{{ $value }}</a>{{ if ne $key (sub (len $.Params.tags) 1) }}, {{ else }}{{ end }}
+    {{ end }}
+</p>

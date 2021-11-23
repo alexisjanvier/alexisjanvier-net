@@ -9,10 +9,9 @@ draft: false
 extra: {}
 in_search_index: true
 slug: journal-intime-dun-developpeur
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - console
 title: Journal intime d'un développeur
 ---

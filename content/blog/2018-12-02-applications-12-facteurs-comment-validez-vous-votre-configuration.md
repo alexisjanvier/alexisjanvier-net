@@ -6,10 +6,9 @@ draft: false
 extra: {}
 in_search_index: true
 slug: applications-12-facteurs-comment-validez-vous-votre-configuration
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - devops
 title: 'Applications 12 facteurs: comment validez-vous votre configuration ?'
 ---

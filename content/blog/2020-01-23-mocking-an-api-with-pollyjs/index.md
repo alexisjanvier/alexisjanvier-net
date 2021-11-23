@@ -7,10 +7,9 @@ extra:
   marmelab: https://marmelab.com/blog/2020/01/23/mocking-an-api-with-pollyjs.html
 in_search_index: true
 slug: mocking-an-api-with-pollyjs
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - test
   - api
 title: Mocking an API with Polly.js

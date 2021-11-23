@@ -8,10 +8,9 @@ extra:
   marmelab: https://marmelab.com/blog/2020/05/13/nettoyage-de-printemps-sur-nos-projets-open-source.html
 in_search_index: true
 slug: nettoyage-de-printemps-sur-nos-projets-open-source
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - foss
 title: Nettoyage de printemps de nos projets open-source
 ---

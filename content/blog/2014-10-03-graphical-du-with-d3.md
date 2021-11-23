@@ -9,10 +9,9 @@ extra:
   marmelab: https://marmelab.com/blog/2014/10/03/graphical-du-with-d3.html
 in_search_index: true
 slug: une-console-plus-graphique-avec-nodejs-et-d3js
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - dataviz
   - console
 title: Une console plus graphique avec node.js et d3.js

@@ -7,10 +7,9 @@ draft: false
 extra: {}
 in_search_index: true
 slug: gasby-avec-docker
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - javascript
   - devops
 title: Développer un site Gasby.js avec Docker

@@ -9,10 +9,9 @@ extra:
   marmelab: https://marmelab.com/blog/2017/09/27/full-time-remote-job.html
 in_search_index: true
 slug: retour-sur-une-annee-en-teletravail-a-plein-temps
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - soft-skill
 title: Retour sur une année en télétravail à plein temps
 ---

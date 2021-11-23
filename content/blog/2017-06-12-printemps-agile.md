@@ -8,10 +8,9 @@ extra:
   marmelab: https://marmelab.com/blog/2017/06/12/printemps-agile.html
 in_search_index: true
 slug: 5e-edition-du-printemps-agile-de-caen
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - projet
 title: 5e édition du Printemps Agile de Caen
 ---

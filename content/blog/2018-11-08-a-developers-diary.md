@@ -8,10 +8,9 @@ extra:
   marmelab: https://marmelab.com/blog/2018/11/08/a-developers-diary.html
 in_search_index: true
 slug: a-developers-diary-building-a-notes-taking-app-in-shell
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - console
 title: 'A Developer''s Diary: Building A Notes Taking App in Shell'
 ---

@@ -7,10 +7,9 @@ draft: false
 extra: {}
 in_search_index: true
 slug: une_console_sous_windows
-taxonomies:
-  categories:
+categories:
   - informatique
-  tags:
+tags:
   - console
 title: Est-ce du snobisme que de vouloir une vraie console sous Windows ?
 ---
