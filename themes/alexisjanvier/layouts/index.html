@@ -16,7 +16,7 @@
     <h1 class="section-title">Talks récents</h1>
     {{$talks := ($.Site.GetPage "section" "talks").Pages.ByPublishDate.Reverse}}
     {{ range first 2 $talks }}
-      {{ partial "blog-item.html" . }}
+      {{ partial "talk-item.html" . }}
     {{ end }}
 </section>
 </div>

@@ -5,4 +5,7 @@ title: Je ne suis pas indépendant, mais je travaille à la maison
 ---
 
 Retour d'experience sur une première année en télétravail au [Paris.JS](https://parisjs.org/meetup/2017-06-28/).    
-[Voir les slides](http://slides.com/alexisjanvier-1/full-remote)
+
+## Slides
+
+{{< slide "alexisjanvier-1/full-remote" "Je ne suis pas indépendant, mais je travaille à la maison" >}}
