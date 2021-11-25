@@ -1,0 +1,19 @@
+{{- define "main" }}
+
+<article class="page">
+    <header class="post-header">
+        <h1 class="post-title">Articles associés au tag {{ .Title }}</h1>
+    </header>
+    
+    {{- range .Pages.GroupByPublishDate "2006" }}
+    {{- if ne .Key "0001" }}
+    <div class="post-content">
+      <h1 class="section-title">{{- replace .Key "0001" "" }}</h1>
+      {{ range .Pages }}
+        {{ partial "blog-item.html" . }}
+    {{ end }}
+    </div>
+    {{- end }}
+    {{- end }}
+</article>
+{{- end  }}{{/* end main */}}
