@@ -4,8 +4,7 @@ description: HATEOAS, JSON-LD, JSON API, HAL, Hydra ... La liste des acronymes d
   spécification liées au REST est longue. Quelle est la place d'OpenAPI dans cette
   liste ?
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2020/03/26/openapi-dans-la-jungle-du-rest.html
+marmelab: https://marmelab.com/blog/2020/03/26/openapi-dans-la-jungle-du-rest.html
 in_search_index: true
 slug: openapi-dans-la-jungle-du-rest
 categories:

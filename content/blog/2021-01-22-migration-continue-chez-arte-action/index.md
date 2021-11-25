@@ -2,8 +2,7 @@
 date: "2021-01-22"
 description: Comment nous avons mis en œuvre une migration continue
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2021/01/22/migration-continue-chez-arte-action.html
+marmelab: https://marmelab.com/blog/2021/01/22/migration-continue-chez-arte-action.html
 in_search_index: true
 slug: migration-continue-chez-arte-action
 categories:

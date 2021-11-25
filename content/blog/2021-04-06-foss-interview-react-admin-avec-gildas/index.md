@@ -2,8 +2,7 @@
 date: "2021-04-06"
 description: Dans cette vidéo, Gildas nous parle du projet open-source React-admin
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2021/04/06/foss-interview-react-admin-avec-gildas.html
+marmelab: https://marmelab.com/blog/2021/04/06/foss-interview-react-admin-avec-gildas.html
 in_search_index: true
 slug: foss-interview-react-admin-avec-gildas
 categories:

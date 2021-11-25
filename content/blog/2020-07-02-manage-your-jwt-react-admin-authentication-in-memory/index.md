@@ -4,8 +4,7 @@ description: The best practice regarding JWT storage is to use memory rather tha
   local storage. But it comes with numerous challenges. Let's see how to tackle these
   in the case of a react-admin application.
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2020/07/02/manage-your-jwt-react-admin-authentication-in-memory.html
+marmelab: https://marmelab.com/blog/2020/07/02/manage-your-jwt-react-admin-authentication-in-memory.html
 in_search_index: true
 slug: handling-jwt-in-admin-apps-the-right-way
 categories:

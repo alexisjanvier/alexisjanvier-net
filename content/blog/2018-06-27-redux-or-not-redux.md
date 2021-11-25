@@ -3,8 +3,7 @@ date: "2018-06-27"
 description: Redux is a fantastic tool for managing state in React.js, but is it suitable
   for all situations? Probably not.
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2018/06/27/redux-or-not-redux.html
+marmelab: https://marmelab.com/blog/2018/06/27/redux-or-not-redux.html
 in_search_index: true
 slug: managing-state-in-react-redux-or-not-redux
 categories:

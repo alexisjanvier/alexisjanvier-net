@@ -3,8 +3,7 @@ date: "2014-09-26"
 description: Retour d'expérience sur le développement d'une application mobile hybride,
   basée sur le service SensioLabsInsight, avec Angular.js, Ionic et PhoneGap
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2014/09/26/mobile-insight-angular-ionic.html
+marmelab: https://marmelab.com/blog/2014/09/26/mobile-insight-angular-ionic.html
 in_search_index: true
 slug: mobileinsight-une-semaine-avec-angularjs,-ionic-et-phonegap
 categories:

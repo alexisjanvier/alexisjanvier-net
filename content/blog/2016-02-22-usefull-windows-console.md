@@ -5,8 +5,7 @@ description: 'Sometimes you have to code on Windows: this can be because of a pe
   can be a bit painful when you are used to a powerful terminal. But some good solutions
   exist, as we''ll see.'
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2016/02/22/a-usefull-windows-console.html
+marmelab: https://marmelab.com/blog/2016/02/22/a-usefull-windows-console.html
 in_search_index: true
 slug: is-it-snobbery-to-want-a-real-console-on-windows
 categories:

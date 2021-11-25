@@ -2,8 +2,7 @@
 date: "2021-01-13"
 description: Comment nous avons préparé un chantier de migration continue
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2021/01/13/migration-continue-chez-arte-mise-en-place.html
+marmelab: https://marmelab.com/blog/2021/01/13/migration-continue-chez-arte-mise-en-place.html
 in_search_index: true
 slug: migration-continue-chez-arte-mise-en-place
 categories:

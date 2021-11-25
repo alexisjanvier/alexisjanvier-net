@@ -4,8 +4,7 @@ description: Jusqu'à présent, la ville de Caen était réputée pour sa scène
   Lanskies, Cannibale, Grand Parc) et electro (Baadman, Superpoze, Fakear). Mais elle
   risque également de le devenir pour son dynamisme autour de l'agilité.
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2017/06/12/printemps-agile.html
+marmelab: https://marmelab.com/blog/2017/06/12/printemps-agile.html
 in_search_index: true
 slug: 5e-edition-du-printemps-agile-de-caen
 categories:

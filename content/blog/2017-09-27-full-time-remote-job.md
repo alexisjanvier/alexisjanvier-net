@@ -5,8 +5,7 @@ description: On trouve beaucoup d’articles de blog sur le « full time remote 
   petit à petit, journée par journée au télétravail, le travail à plein temps à distance
   est moins courant. Pourtant c’est possible et c’est efficace.
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2017/09/27/full-time-remote-job.html
+marmelab: https://marmelab.com/blog/2017/09/27/full-time-remote-job.html
 in_search_index: true
 slug: retour-sur-une-annee-en-teletravail-a-plein-temps
 categories:

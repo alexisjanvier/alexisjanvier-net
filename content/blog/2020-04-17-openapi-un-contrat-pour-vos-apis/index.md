@@ -3,8 +3,7 @@ date: "2020-04-17"
 description: La spécification OpenAPI permet d'écrire le contrat du service fourni
   par une API REST. Mais comment écrire un tel contrat et à quoi va-t-il servir ?
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2020/04/17/openapi-un-contrat-pour-vos-apis.html
+marmelab: https://marmelab.com/blog/2020/04/17/openapi-un-contrat-pour-vos-apis.html
 in_search_index: true
 slug: openapi-un-contrat-pour-vos-apis
 categories:

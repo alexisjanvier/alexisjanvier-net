@@ -4,8 +4,7 @@ description: Un outil de plus dans la panoplie des développeurs web ? Les servi
   workers offrent bien plus que la simple possibilité de rendre une application disponible
   hors-ligne. Voyons ça en pratique.
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2017/03/21/decouvrir-les-service-workers.html
+marmelab: https://marmelab.com/blog/2017/03/21/decouvrir-les-service-workers.html
 in_search_index: true
 slug: decouvrir-les-service-workers
 categories:

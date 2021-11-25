@@ -3,8 +3,7 @@ date: "2021-03-08"
 description: Dans cette vidéo, Maxime et Pierre nous parlent du projet open-source
   stretch-discord
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2021/03/08/foss-interview-stretch-discord-avec-maxime-et-pierre.html
+marmelab: https://marmelab.com/blog/2021/03/08/foss-interview-stretch-discord-avec-maxime-et-pierre.html
 in_search_index: true
 slug: foss-interview-stretch-discord-avec-maxime-et-pierre
 categories:

@@ -3,6 +3,7 @@
     <header class="post-header">
         <h1 class="post-title" itemprop="name headline">{{ .Title }}</h1>
         <p class="post-meta">
+            {{ if .Params.marmelab }}Publié à l'origine sur le blog de <a href="{{ .Params.marmelab }}">Marmelab</a> le {{ end }}
             <time datetime="{{ .Date }}" itemprop="datePublished">
                 {{ .Date | time.Format ":date_full" }}
             </time>- {{ .ReadingTime }} min de lecture -  

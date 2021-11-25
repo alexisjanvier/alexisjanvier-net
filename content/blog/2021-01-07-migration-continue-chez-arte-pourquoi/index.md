@@ -2,8 +2,7 @@
 date: "2021-01-07"
 description: Pourquoi nous nous sommes lancés dans un chantier de migration continue
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2021/01/07/migration-continue-chez-arte-pourquoi.html
+marmelab: https://marmelab.com/blog/2021/01/07/migration-continue-chez-arte-pourquoi.html
 in_search_index: true
 slug: migration-continue-chez-arte-pourquoi
 categories:

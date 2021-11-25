@@ -4,8 +4,7 @@ description: Code splitting and server-side rendering are two ways of making a R
   app fast. Let's put them together in practice, with Redux, Sagas and React Router
   V4.
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2017/10/17/code-splitting.html
+marmelab: https://marmelab.com/blog/2017/10/17/code-splitting.html
 in_search_index: true
 slug: running-react-router-v4,-redux-saga,-ssr-and-code-splitting-together
 categories:

@@ -2,8 +2,7 @@
 date: "2021-02-26"
 description: Dans cette vidéo, Kevin nous parle du projet open-source comfygure
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2021/02/26/foss-interview-comfygure-avec-kevin.html
+marmelab: https://marmelab.com/blog/2021/02/26/foss-interview-comfygure-avec-kevin.html
 in_search_index: true
 slug: foss-interview-comfygure-avec-kevin
 categories:

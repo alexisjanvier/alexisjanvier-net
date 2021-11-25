@@ -4,8 +4,7 @@ description: On trouve plus de 200 dépôts publics sur notre compte Github. Est
   à dire que nous maintenons plus de 200 projets open-source ? Non, un petit nettoyage
   s'imposait...
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2020/05/13/nettoyage-de-printemps-sur-nos-projets-open-source.html
+marmelab: https://marmelab.com/blog/2020/05/13/nettoyage-de-printemps-sur-nos-projets-open-source.html
 in_search_index: true
 slug: nettoyage-de-printemps-sur-nos-projets-open-source
 categories:

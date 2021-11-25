@@ -5,8 +5,7 @@ description: '"Afficher graphiquement l''occupation disque d''un répertoire dan
   à en tenter l''implémentation, peut-on dire que node.js et d3.js sont utilisables
   pour des rendus graphiques dans un terminal ? Oui. Mais ...'
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2014/10/03/graphical-du-with-d3.html
+marmelab: https://marmelab.com/blog/2014/10/03/graphical-du-with-d3.html
 in_search_index: true
 slug: une-console-plus-graphique-avec-nodejs-et-d3js
 categories:

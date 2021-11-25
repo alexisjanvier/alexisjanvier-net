@@ -4,8 +4,7 @@ description: I'm used to recording all the little things I learn from day to day
   a developer. Since I didn't find the right note-taking tool to integrate in my daily
   routine, I coded it. Read on to see what I learned in the process.
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2018/11/08/a-developers-diary.html
+marmelab: https://marmelab.com/blog/2018/11/08/a-developers-diary.html
 in_search_index: true
 slug: a-developers-diary-building-a-notes-taking-app-in-shell
 categories:

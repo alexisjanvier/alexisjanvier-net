@@ -3,8 +3,7 @@ date: "2021-10-14"
 description: To use a database in a web app, we have to build an API. But what if
   we could use a database directly from the browser?
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2021/10/14/using-an-sqlite-database-live-in-react-admin.html
+marmelab: https://marmelab.com/blog/2021/10/14/using-an-sqlite-database-live-in-react-admin.html
 in_search_index: true
 slug: using-an-sqlite-database-live-in-react-admin
 categories:

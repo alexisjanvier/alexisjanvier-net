@@ -4,8 +4,7 @@ description: Peut-on facilement et rapidement améliorer la classique commande `
   grâce au langage Go ? Nancy étant dans les cartons, c'est Paris qui s'y colle pour
   cette journée de Hackday.
 draft: false
-extra:
-  marmelab: https://marmelab.com/blog/2014/10/30/tree-command-with-go.html
+marmelab: https://marmelab.com/blog/2014/10/30/tree-command-with-go.html
 in_search_index: true
 slug: une-commande-tree-plus-efficace-grace-au-go
 categories:
