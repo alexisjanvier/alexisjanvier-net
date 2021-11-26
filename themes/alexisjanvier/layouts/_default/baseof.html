@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
-    {{ partial "head.html" . }}
+    <head>
+        {{ partial "base-head.html" . }}
+        {{ block "prismcss" . }}{{ end }}
+        {{ template "_internal/opengraph.html" . }}
+        {{ template "_internal/twitter_cards.html" . }}
+        {{ block "jsonld" . }}{{ end }}
+    </head>
     <body>
         <div class="row">
             <div class="col-xs-12 col-md-3 no-margin">
@@ -16,6 +22,20 @@
                 {{ partial "footer-mobile.html" . }}
             </div>
         </div>
-        <script src="/js/prism.js"></script>
+        {{ block "prism" . }}{{ end }}
+        <script type="text/javascript">
+            function openMenu() {
+              document.getElementById("nav").className = '';
+              document.getElementById("menu").className = 'fadeIn animated';
+              document.querySelector(".menu").className = 'menu';
+            }
+        
+            function closeMenu() {
+              document.getElementById("menu").className = 'fadeOut animated';
+              setTimeout(function () {
+                document.querySelector(".menu").className = 'menu hide2';
+              }, 300);
+            }
+        </script>
     </body>
 </html>

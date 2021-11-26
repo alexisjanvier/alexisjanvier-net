@@ -1,3 +1,23 @@
+{{ define "jsonld" }}
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "location": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "postalCode": "80209",
+          "addressLocality": "Denver",
+          "addressCountry": "FR"
+        },
+        "name": "{{ .Params.description }}"
+      },
+      "name": "{{ .Title }}",
+      "startDate": "{{ .Date }}"
+    }
+</script>
+{{ end }}
 {{ define "main" }}
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">

@@ -1,3 +1,7 @@
+{{ define "jsonld" }}
+  <script type="application/ld+json">
+    {"description":"Internet is not dead it just smells funny..","url":"https://alexisjanvier.net/","@type":"WebSite","headline":"Internet is not dead it just smells funny.","name":"Alexis Janvier","@context":"https://schema.org"}</script>
+{{ end }}
 {{ define "main" }}
 <div class="home">
   {{$posts := ($.Site.GetPage "section" "blog").Pages.ByPublishDate.Reverse}}

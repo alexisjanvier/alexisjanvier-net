@@ -1,3 +1,10 @@
+{{ define "prismcss" }}
+<link rel="stylesheet" href="{{ "css/themer-prism-dark.css" | relURL }}" media="none" onload="this.media='all';">
+{{ end }}
+{{ define "jsonld" }}
+<script type="application/ld+json">
+    {"mainEntityOfPage":{"@type":"WebPage","@id":"{{ .RelPermalink | absURL }}"},"description":"{{ .Params.Description }}","url":"{{ .RelPermalink | absURL }}","@type":"BlogPosting","headline":"{{ .Title }}","dateModified":"{{ .Date.UTC }}","datePublished":"{{ .Date.UTC }}","author":{"@type":"Person","name":"Alexis Janvier"},"@context":"https://schema.org"}</script>
+{{ end }}
 {{ define "main" }}
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
@@ -32,3 +39,7 @@
 </section>
 {{ end }}
 {{ end }}
+{{ define "prism" }}
+<script src="/js/prism.js"></script>
+{{ end }}
+        
