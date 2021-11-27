@@ -46,7 +46,7 @@ anchor = "smart"
   url = '/talks'
   weight = 3
 [[menu.nav]]
-  name = 'A propos'
+  name = 'À propos'
   url = '/a-propos'
   weight = 4
 copyright = 'This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'

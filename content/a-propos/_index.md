@@ -1,6 +1,10 @@
 ---
 description: A propos ... de moi
-title: A propos
+title: À propos
 ---
 
-# Mon cv
+## De qui je suis
+
+## De ce site
+
+## Du CaenCamp

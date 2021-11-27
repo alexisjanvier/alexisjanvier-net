@@ -1,13 +1,14 @@
 <div class="hide-mobile">
-    <div id="msg" class="hidden">
+    <div class="hidden msg">
         <div class="curtain fullScreen">
             <div class="table fullScreen">
                 <div class="msgContainer fullScreen">
-                    <div id="msgContent">
+                    <div class="msgContent">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    {{ .Scratch.Set "location" "desktop" }}
     {{ partial "footer.html" . }}
 </div>

@@ -18,6 +18,6 @@
 <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon/favicon-32x32.png" | absURL }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon/favicon-16x16.png" | absURL }}">
 {{ $style := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint "md5" }}
-<link rel="stylesheet" href="{{ $style.Permalink | absURL }}" integrity="{{ $style.Data.Integrity }}">
+<link rel="stylesheet" href="{{ $style.Permalink | relURL }}" integrity="{{ $style.Data.Integrity }}">
 
 <link rel="alternate" type="application/rss+xml" title="Alexis Janvier — Développeur" href="{{ "index.xml" | absURL }}" />

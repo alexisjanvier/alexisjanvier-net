@@ -9,12 +9,15 @@
     </head>
     <body>
         <div class="row">
+            <div class="skipnav" role="navigation" aria-label="Secondary">
+                <a href="#maincontent">Aller directement au contenu</a>
+            </div>
             <div class="col-xs-12 col-md-3 no-margin">
                 {{ partial "header.html" . }}
                 {{ partial "footer-desktop.html" . }}
             </div>
             <div class="col-xs-12 col-md-9 no-margin">
-                <main class="page-content" aria-label="Content">
+                <main class="page-content" id="maincontent">
                     <div class="wrapper">
                         {{ block "main" . }}{{ end }}
                     </div>
@@ -24,18 +27,7 @@
         </div>
         {{ block "prism" . }}{{ end }}
         <script type="text/javascript">
-            function openMenu() {
-              document.getElementById("nav").className = '';
-              document.getElementById("menu").className = 'fadeIn animated';
-              document.querySelector(".menu").className = 'menu';
-            }
-        
-            function closeMenu() {
-              document.getElementById("menu").className = 'fadeOut animated';
-              setTimeout(function () {
-                document.querySelector(".menu").className = 'menu hide2';
-              }, 300);
-            }
+            function openMenu(){document.getElementById("nav").className='';document.getElementById("menu").className='fadeIn animated';document.querySelector(".menu").className='menu'}function closeMenu(){document.getElementById("menu").className='fadeOut animated';setTimeout(function(){document.querySelector(".menu").className='menu hide2'},300)}
         </script>
     </body>
 </html>

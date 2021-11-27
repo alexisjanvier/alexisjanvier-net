@@ -803,7 +803,7 @@ html {
 }
 @media screen and (min-width: 37em) {
   html {
-    font-size: 1.0775rem;
+    font-size: 1.0925rem;
   }
 }
 * {
@@ -1401,23 +1401,23 @@ label {
   display: table-cell;
   vertical-align: middle;
 }
-#msgContent {
+.msgContent {
   max-width: 90%;
   margin: 0 auto;
   z-index: 10;
   text-align: center;
   padding: 10% 5% 5%;
 }
-#msgContent .button {
+.msgContent .button {
   margin: 0 auto;
   margin-top: 3.125rem;
 }
-#msgContent p,
-#msgContent h2 {
+.msgContent p,
+.msgContent h2 {
   margin-left: auto;
   margin-right: auto;
 }
-#msgContent p a:before {
+.msgContent p a:before {
   white-space: pre;
   content: "\A";
 }
@@ -1917,3 +1917,7 @@ video {
 img.logo {
   border-radius: 50%;
 }
+
+.skipnav { text-align: left; }
+.skipnav a { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.skipnav a:focus, .skipnav a:active { position: static; left: 0; width: auto; height: auto; overflow: visible; text-decoration: underline; }

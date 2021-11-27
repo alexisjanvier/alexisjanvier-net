@@ -1,5 +1,5 @@
 ---
-title: Mon set
+title: Ce que j'utilise
 ---
 
 ## Le materiel
