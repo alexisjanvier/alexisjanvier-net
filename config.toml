@@ -49,3 +49,7 @@ anchor = "smart"
   name = 'A propos'
   url = '/a-propos'
   weight = 4
+copyright = 'This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.'
+rssLimit = 2
+[author]
+  name = 'Alexis Janvier'
