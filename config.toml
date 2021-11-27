@@ -53,3 +53,7 @@ copyright = 'This work is licensed under a Creative Commons Attribution-ShareAli
 rssLimit = 2
 [author]
   name = 'Alexis Janvier'
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
