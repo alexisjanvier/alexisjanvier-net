@@ -1073,7 +1073,7 @@ article a:active {
 }
 .post-meta a,
 figcaption a {
-  color: #85868e;
+  color: #75767d;
   text-decoration: underline !important;
   border-bottom: none;
 }
@@ -1083,7 +1083,7 @@ figcaption a {
 figcaption a:active,
 figcaption a:hover,
 figcaption a:visited {
-  color: #85868e;
+  color: #75767d;
   border-bottom: none;
 }
 footer a {
@@ -1099,7 +1099,7 @@ footer a:visited {
 }
 .reversefootnote {
   font-family: sans-serif;
-  color: #85868e;
+  color: #75767d;
   text-decoration: underline !important;
   border-bottom: none;
 }
@@ -1108,7 +1108,7 @@ footer a:visited {
 }
 .reversefootnote:active,
 .reversefootnote:visited {
-  color: #85868e;
+  color: #75767d;
 }
 .menu-list a {
   border-bottom: none;
@@ -1199,7 +1199,7 @@ summary {
 }
 figcaption {
   line-height: 1.5625rem;
-  color: #85868e;
+  color: #75767d;
   display: block;
   font-size: 0.8125rem;
   font-style: italic;
@@ -1881,11 +1881,11 @@ article p.attention-grabber + p.indent {
   text-transform: lowercase;
 }
 .post-meta {
-  color: #85868e;
+  color: #75767d;
   font-size: 0.9rem;
 }
 .light-font {
-  color: #85868e;
+  color: #75767d;
 }
 .smaller-text {
   font-size: 0.9rem;
