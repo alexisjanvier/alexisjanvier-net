@@ -1,4 +1,8 @@
 {{ $image := $.Page.Resources.GetMatch (.Get 0)}}
+{{ $img := $.Page.Resources.GetMatch (.Get 0) }}
+{{ if gt $img.Width 800 }}
+{{ $img = $img.Resize "800x" }}
+{{ end }}
 {{ $smallImage := $image.Resize "620x" }}
 <figure class="image">
     <a href="{{ $image.RelPermalink }}">

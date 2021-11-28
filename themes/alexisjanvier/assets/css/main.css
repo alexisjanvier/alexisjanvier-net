@@ -807,12 +807,12 @@ html {
   }
 }
 * {
-  line-height: 1.6225rem;
+  line-height: 1.6625rem;
   margin: 0 0 1.5625rem;
 }
 @media screen and (min-width: 37em) {
   * {
-    line-height: 1.5310526316rem;
+    line-height: 1.5810526316rem;
     margin-bottom: 1.4210526316rem;
   }
   * .no-margin {
@@ -1274,6 +1274,7 @@ figure > img {
   }
   .full-bleed-image img {
     width: 100%;
+    height: auto;
   }
 }
 .full-bleed-image figcaption {
@@ -1659,6 +1660,7 @@ hr {
 img {
   border: 0;
   max-width: 100%;
+  height: auto;
   display: block;
   margin: inherit auto;
 }

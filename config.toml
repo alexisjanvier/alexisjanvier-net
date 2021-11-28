@@ -24,13 +24,13 @@ theme = 'alexisjanvier'
 # Default resample filter used for resizing. Default is Box,
 # a simple and fast averaging filter appropriate for downscaling.
 # See https://github.com/disintegration/imaging
-resampleFilter = "CatmullRom"
+resampleFilter = "Box"
 # Default JPEG or WebP quality setting. Default is 75.
 quality = 80
 # Default hint about what type of image. Currently only used for WebP encoding.
 # Default is "photo".
 # Valid values are "picture", "photo", "drawing", "icon", or "text".
-hint = "text"
+hint = "photo"
 anchor = "smart"
 [menu]
 [[menu.nav]]

@@ -1,0 +1,24 @@
+{{ $image := $.Page.Resources.GetMatch (.Get "src")}}
+{{ $desktopImage := $image.Resize "1024x jpg" }}
+{{ $desktopImageWebp := $image.Resize "1024x webp" }}
+{{ $mobileImage := $image.Resize "350x jpg" }}
+{{ $mobileImageWebp := $image.Resize "350x webp" }}
+<figure class="full-bleed-image" role="figure">
+        <picture>
+            {{ if gt $image.Width $mobileImage.Width}}
+            <source srcset="{{ $mobileImage.RelPermalink }} {{ $mobileImage.Width }}w" media="(max-width: 399px)" type="image/jpeg">
+            <source srcset="{{ $mobileImageWebp.RelPermalink }} {{ $mobileImage.Width }}w" media="(max-width: 399px)" type="image/webp">
+            {{ end }}
+            {{ if eq $desktopImage.Width $image.Width}}
+            <source srcset="{{ $image.RelPermalink }} {{ $image.Width }}w"  media="(min-width: 400px)" type="image/jpeg">
+            <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ $.Get "alt" }}" />
+            {{ else }}
+            <source srcset="{{ $desktopImage.RelPermalink }} {{ $desktopImage.Width }}w" media="(min-width: 400px)" type="image/jpeg">
+            <source srcset="{{ $desktopImageWebp.RelPermalink }} {{ $desktopImage.Width }}w" media="(min-width: 400px)" type="image/webp">
+            <a href="{{ $image.RelPermalink }}" alt="{{ $.Get "alt" }}">
+                <img src="{{ $desktopImage.RelPermalink }}" width="{{ $desktopImage.Width }}" height="{{ $desktopImage.Height }}" alt="{{ $.Get "alt" }}" />
+            </a>
+            {{ end }}
+    <figcaption>{{ .Get "alt" }}</figcaption>
+</figure>
+

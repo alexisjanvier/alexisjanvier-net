@@ -184,7 +184,7 @@ Il reste un dernier point à traiter avant de pouvoir tester la version de produ
 
 Et voici maintenant schématiquement le fonctionnement de notre implémentation de footer mis en cache :
 
-{{< postlargeimage "react-esi.excalidraw.png" "Fonctionnement schématique du footer en ESI">}}
+{{< imgbig src="react-esi.excalidraw.png" alt="Fonctionnement schématique du footer en ESI" >}}
 
 (1) Le serveur Next ne va pas renvoyer le rendu du composant `Footer`, mais une balise ESI :
 	
