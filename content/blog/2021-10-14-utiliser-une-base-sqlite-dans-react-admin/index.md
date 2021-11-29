@@ -192,7 +192,7 @@ export const getDbDescription = async dbClient => {
 
 Ce qui donne dans la console :
 
-{{< postlargeimage "dbDescription.jpg" "La sortie de getDbDescription dans la console du navigateur" >}}
+{{< imgbig src="dbDescription.jpg" alt="La sortie de getDbDescription dans la console du navigateur" >}}
 
 Rien n'empêche d'imaginer de mettre en place à partir de ces informations un mécanisme permettant de générer à la voler les `ressources` react-admin convenablement configurées, à l'image de ce que fait le composant `<AdminGuesser />` [d'API Platform](https://github.com/api-platform/admin).
 
