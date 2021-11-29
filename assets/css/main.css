@@ -1053,9 +1053,9 @@ section {
 }
 article a {
   background: 0 0;
-  color: #254c79;
+  color: #0250a8;
   transition: all 0.2s;
-  text-decoration: none;
+  text-decoration: underline;
 }
 article a:active,
 article a:hover {
