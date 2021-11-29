@@ -1,20 +1,30 @@
 {{ define "jsonld" }}
 <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Caen",
-        "postalCode": "14000",
-        "addressCountry": "FR"
-      },
-      "image": "https://secure.gravatar.com/avatar/4ca5068a7c55a229d9546da2f51e2f53",
-      "jobTitle": "Développeur",
-      "name": "Alexis Janvier",
-      "url": "https://alexisjanvier.net/a-propos"
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Caen",
+      "postalCode": "14000",
+      "addressCountry": "FR"
+    },
+    "image": "https://secure.gravatar.com/avatar/4ca5068a7c55a229d9546da2f51e2f53",
+    "jobTitle": "Développeur",
+    "name": "Alexis Janvier",
+    "url": "https://alexisjanvier.net/a-propos",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Caen.Camp",
+      "url": "https://caen.camp"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Marmelab",
+      "url": "https://marmelab.com/"
     }
-    </script>
+  }
+</script>
 {{ end }}
 {{ define "main" }}
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
