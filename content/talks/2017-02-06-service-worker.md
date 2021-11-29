@@ -1,7 +1,11 @@
 ---
 date: "2017-02-06"
-description: Rencontres Interactives
+description: Introduction à l'API service worker.
 title: Embauchez un service worker
+city: Caen
+cp: 14000
+organizer: Rencontres Interactives
+link: http://rencontres-interactives.net/
 ---
 
 Introduction à l'[API service worker](https://developer.mozilla.org/fr/docs/Web/API/Service_Worker_API) aux [Rencontres Interactives](http://rencontres-interactives.net/).    

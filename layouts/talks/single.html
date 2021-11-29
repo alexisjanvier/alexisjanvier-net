@@ -7,14 +7,35 @@
         "@type": "Place",
         "address": {
           "@type": "PostalAddress",
-          "postalCode": "80209",
-          "addressLocality": "Denver",
+          "postalCode": "{{ .Params.cp }}",
+          "addressLocality": "{{ .Params.city }}",
           "addressCountry": "FR"
         },
-        "name": "{{ .Params.description }}"
+        "name": "{{ .Params.organizer }}"
       },
       "name": "{{ .Title }}",
-      "startDate": "{{ .Date }}"
+      "startDate": "{{ .Date }}",
+      "description": "{{ .Params.description }}",
+      "eventAttendanceMode": "OfflineEventAttendanceMode",
+      "eventStatus": "EventScheduled",
+      "performer": {
+        "@type": "Person",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Caen",
+            "postalCode": "14000",
+            "addressCountry": "FR"
+          },
+          "image": "https://secure.gravatar.com/avatar/4ca5068a7c55a229d9546da2f51e2f53",
+          "jobTitle": "Développeur",
+          "name": "Alexis Janvier",
+          "url": "https://alexisjanvier.net/a-propos"
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "{{ .Params.organizer }}",
+        "url": "{{ .Params.link }}"
+      }
     }
 </script>
 {{ end }}
@@ -25,7 +46,7 @@
         <p class="post-meta">
             Talk donné le <time datetime="{{ .Date }}" itemprop="datePublished">
                 {{ .Date | time.Format ":date_full" }}
-            </time> au {{ .Params.description }}.
+            </time> au {{ .Params.organizer }}.
         </p>
     </header>
     <div class="post-content" itemprop="articleBody">
