@@ -1,5 +1,5 @@
 ---
-title: Ce que j'utilise
+title: Ce que j'utilise (mon environnement travail)
 layout: uses
 ---
 
@@ -21,4 +21,4 @@ Mon laptop est sous [Ubuntu](https://ubuntu.com/download/desktop) (20.04.2 LTS).
  
 Je code avec [Neovim](https://neovim.io/) auquel j'ai ajouté pas mal de plug-ins (avec [vim-plug](https://github.com/junegunn/vim-plug)) dont les principaux sont : [nerdtree](https://github.com/preservim/nerdtree), [vim-surround](https://github.com/tpope/vim-surround), [coc](https://github.com/neoclide/coc.nvim) et [fzf](https://github.com/junegunn/fzf.vim). Les deux autres outils absolument nécessaires à mon quotidien sont [Git](https://git-scm.com/) et [Docker](https://www.docker.com/), mais j'utilise aussi régulièrement [Insomnia](https://insomnia.rest/) et [DBeaver](https://dbeaver.io/).
 
-Mon premier choix de navigateur web est [Firefox](https://www.mozilla.org/fr/firefox/new/) même si Chrome est souvent ouvert par pragmatisme. J'utilise [Thunderbird](https://www.thunderbird.net/fr/) pour mes mails et mes agendas. Je gère mes mots de passe avec [Bitwarden](https://bitwarden.com/). J'écris mes notes et mes posts de blog en [Markdown](https://daringfireball.net/projects/markdown/) avec [VSCode](https://code.visualstudio.com/). Je fais mes captures d'écran avec [Kazam](https://framalibre.org/content/kazam) et j'utilise [OpenShot](https://www.openshot.org/fr/) pour faire des montages vidéo. Je redimensionne et compresse mes images avec [Squoosh](https://squoosh.app/). Et je lance tous ces softs graphiques avec [Albert](https://github.com/albertlauncher/albert).
+Mon premier choix de navigateur web est [Firefox](https://www.mozilla.org/fr/firefox/new/) même si Chrome est parfois ouvert par pragmatisme. J'utilise [Thunderbird](https://www.thunderbird.net/fr/) pour mes mails et mes agendas. Je gère mes mots de passe avec [Bitwarden](https://bitwarden.com/). J'écris mes notes et mes posts de blog en [Markdown](https://daringfireball.net/projects/markdown/) avec [Obsidian](https://obsidian.md/). Je fais mes captures d'écran avec [Kazam](https://framalibre.org/content/kazam) et j'utilise [OpenShot](https://www.openshot.org/fr/) pour faire des montages vidéo. Je redimensionne et compresse mes images avec [Squoosh](https://squoosh.app/). Et je lance tous ces softs graphiques avec [Albert](https://github.com/albertlauncher/albert).
