@@ -20,15 +20,25 @@ La première brique pour faire du partage de contenu web à la maison est d'avoi
 
 Je ne vais pas faire ici un tuto sur la procédure, elle est déjà suffisamment documentée sur le web, comme par exemple sur cet article : ["Tutoriel Freebox Delta : comment installer une machine virtuelle"](https://www.universfreebox.com/article/52276/Tutoriel-Freebox-Delta-comment-installer-une-machine-virtuelle).
 
-Pour ma part, j'ai installé l'image `Ubuntu 20.04`. Ne restait plus qu'à y installer le serveur Nginx (`sudo apt update` puis `sudo apt install nginx`) pour avoir un serveur web fonctionnel.
+Pour ma part, j'ai installé l'image `Ubuntu 20.04`. Ne restait plus qu'à y installer le serveur Nginx et [Fail2ban](https://www.fail2ban.org/wiki/index.php/Main_Page) (`sudo apt update` puis `sudo apt install nginx fail2ban`) pour avoir un serveur web fonctionnel.
 
-Ensuite, après avoir attribué un bail dhcp à cette vm afin de s'assurer que son IP au sein de mon réseau soit fixe, j'ai activé le firewall [ufw](https://doc.ubuntu-fr.org/ufw):
+Ensuite, après avoir attribué un bail dhcp à cette vm afin de s'assurer que son IP au sein de mon réseau soit fixe, j'ai 
+
+- activé le firewall [ufw](https://doc.ubuntu-fr.org/ufw):
 
 ```bash
 sudo ufw allow 'Nginx Full'
 sudo ufw allow 'OpenSSH'
+sudo ufw allow 2222
 sudo ufw enable
 ```
+- changé le port ssh (édition du fichier `/etc/ssh/sshd_config` puis `sudo service sshd restart`)
+
+```txt
+Port 2222
+```
+
+- configuré [fail2ban](https://zaiste.net/posts/intro-fail2ban-ufw/) pour qu'il fonctionne avec `ufw`
 
 Dernière chose à faire avant de se lancer dans la configuration du serveur : installer [Certbot](https://certbot.eff.org/instructions?ws=nginx&os=ubuntufocal) pour générer les certificats https. Et j'avoue avoir utiliser l'installation standard Ubuntu en passant par `snap`. Mais je n’aime pas trop bien ça utiliser snap ...
 
@@ -179,6 +189,7 @@ Il n'en reste pas moins que l'utilisation d'une VM Freebox est satisfaisante et 
 - [Pour la liberté de choisir sa connexion à Internet – La Quadrature du Net](https://www.laquadrature.net/2021/09/27/pour-la-liberte-de-choisir-sa-connexion-a-internet/)
 - [The small web is beautiful](https://benhoyt.com/writings/the-small-web-is-beautiful)
 - [Tutoriel Freebox Delta : comment installer une machine virtuelle](https://www.universfreebox.com/article/52276/Tutoriel-Freebox-Delta-comment-installer-une-machine-virtuelle)
+- [Intro to fail2ban with ufw](https://zaiste.net/posts/intro-fail2ban-ufw/)
 - [Certbot | Certbot](https://certbot.eff.org/)
 - [Hardening your HTTP response headers](https://scotthelme.co.uk/hardening-your-http-response-headers)
 - [Analyse your HTTP response headers](https://securityheaders.com/)
