@@ -26,8 +26,7 @@
             </div>
         </div>
         {{ block "prism" . }}{{ end }}
-        <script type="text/javascript">
-            function openMenu(){document.getElementById("nav").className='';document.getElementById("menu").className='fadeIn animated';document.querySelector(".menu").className='menu'}function closeMenu(){document.getElementById("menu").className='fadeOut animated';setTimeout(function(){document.querySelector(".menu").className='menu hide2'},300)}
-        </script>
+        {{ $script := resources.Get "js/menu.js" | resources.Minify | resources.Fingerprint "sha256" }}
+        <script src="{{ $script.Permalink | relURL }}" integrity="{{ $script.Data.Integrity }}"></script>
     </body>
 </html>

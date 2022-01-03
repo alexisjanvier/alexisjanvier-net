@@ -1,5 +1,4 @@
 <div class="menu-list">
-    
     {{ $current := . }}
     {{ range .Site.Menus.nav }}
     {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}

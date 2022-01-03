@@ -40,6 +40,7 @@
 {{ end }}
 {{ end }}
 {{ define "prism" }}
-<script src="/js/prism.js"></script>
+{{ $prism := resources.Get "js/prism.js" | resources.Fingerprint "sha256" }}
+<script src="{{ $prism.Permalink | relURL }}" integrity="{{ $prism.Data.Integrity }}"></script>
 {{ end }}
         
