@@ -1,5 +1,6 @@
 ---
 title: "Auto-hébergement avec une machine virtuelle Freebox"
+slug: auto-hebergement-avec-une-machine-virtuelle-freebox
 description: "Plutôt que d'avoir à alimenter un serveur dédié, pourquoi ne pas utiliser directement ma box - qui devra  être allumée quoi qu'il se passe - pour faire mon auto-hébergement web ?"
 date: 2021-12-27
 draft: false
