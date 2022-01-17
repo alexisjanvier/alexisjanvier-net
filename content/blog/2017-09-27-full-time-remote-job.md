@@ -11,7 +11,7 @@ slug: retour-sur-une-annee-en-teletravail-a-plein-temps
 categories:
   - informatique
 tags:
-  - soft-skill
+  - métier
 title: Retour sur une année en télétravail à plein temps
 ---
 

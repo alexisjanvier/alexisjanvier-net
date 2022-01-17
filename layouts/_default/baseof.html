@@ -17,7 +17,9 @@
                 {{ partial "footer-desktop.html" . }}
             </div>
             <div class="col-xs-12 col-md-9 no-margin">
-                <main class="page-content" id="maincontent">
+                {{ block "main_content" . }}
+                    <main class="page-content" id="maincontent">
+                {{ end }}
                     <div class="wrapper">
                         {{ block "main" . }}{{ end }}
                     </div>

@@ -1,0 +1,17 @@
+{{ $cv := index $.Site.Data.curriculum_vitae $.Site.Language.Lang }}
+{{ with $cv.education }}
+  <section id="education">
+    <h2 class="section-title">Formation</h2>
+    {{ range . }}
+      <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+          <h3 itemprop="description">
+            {{ range first 1 .courses }}
+                {{ . }}
+            {{ end }}
+          </h3>
+          <span itemprop="name">{{ .institution }} - </span>
+          <span itemprop="startDate" content="{{ .startDate }}">{{ .startDate | time.Format "2006" }}</span>/<span itemprop="endDate" content="{{ .endDate }}">{{ .endDate | time.Format "2006" }}</span>
+      </article>
+    {{ end }}
+  </article>
+{{ end }}

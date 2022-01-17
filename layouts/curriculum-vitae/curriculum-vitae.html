@@ -26,13 +26,18 @@
   }
 </script>
 {{ end }}
+{{ define "main_content"}}
+    <main class="page-content" id="maincontent" itemscope=true itemtype="http://schema.org/Person">
+{{ end }}
 {{ define "main" }}
-<article class="post">
+<div class="post">
     <header class="post-header">
-        <h1 class="post-title">{{ .Title }}</h1>
+        <h1 class="post-title">Curriculum vitæ</h1>
     </header>
     <div class="post-content">
-        {{ .Content }}
+      {{ partial "json-resume/work.html" . }}
+      {{ partial "json-resume/education.html" . }}
+      {{ partial "json-resume/volunteer.html" . }}
     </div>
-</article>
+</div>
 {{ end }}

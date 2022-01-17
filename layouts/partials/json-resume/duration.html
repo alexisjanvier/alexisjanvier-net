@@ -1,0 +1,38 @@
+{{$duration := ""}}
+{{- if .context.endDate -}}
+  {{$from := time .context.startDate }}
+  {{$to := time .context.endDate }}
+  {{$tmonths:=mul ($to.Sub $from).Hours 0.00136986301 }}
+  {{$months := mod $tmonths 12 }}
+  {{$years := math.Floor (div $tmonths 12)}}
+  {{$yearStr := "ans"}}
+  {{if lt $years 2 }}{{$yearStr = "an"}}{{end}}
+  {{$monthStr := "mois"}}
+  {{if lt $months 2 }}{{$monthStr = "mois"}}{{end}}
+
+
+  {{if gt $years 0 }}
+    {{if gt $months 0 }}
+      {{$duration = printf "%s%.0f %s et " $duration $years $yearStr}}
+    {{ else }}
+      {{$duration = printf "%s%.0f %s" $duration $years $yearStr}}
+    {{end}}
+  {{end}}
+  {{if gt $months 0 }}
+    {{$duration = printf "%s%d %s" $duration $months $monthStr}}
+  {{end}}
+{{- end -}}
+
+<div>
+  De <span class="jobDate" itemprop="startDate" content="{{ .context.startDate }}">{{ .context.startDate | time.Format "January 2006" }}</span>
+  <span>à </span>
+    {{- with .context.endDate -}}
+      <span class="jobDate" itemprop="endDate" content="{{ . }}">{{- . | time.Format "January 2006" -}}</span>
+    {{- else -}}
+      <span class="jobDate">aujourd'hui</span>
+    {{- end -}}
+  </span>
+  {{if $duration }}
+    <span> ({{ $duration }})</span>
+  {{- end -}}
+</div>
