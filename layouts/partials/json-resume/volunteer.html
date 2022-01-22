@@ -1,0 +1,30 @@
+{{ $cv := index $.Site.Data.curriculum_vitae $.Site.Language.Lang }}
+{{ with $cv.volunteer }}
+<section id="volunteer">
+  <h2 class="section-title">Bénévolat</h2>
+    {{ range . }}
+      <article class="volunteer" itemprop="memberOf">
+        <div itemscope itemtype="http://schema.org/Event/Organization">
+          <h3>{{ .position }} - <span itemprop="name">{{ .organization }}</span></h3>
+          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+            {{ if .website }}
+            <a itemprop="url" href="{{ .website }}">Site</a>
+          {{ end }}
+          </span>
+          {{ partial "json-resume/duration.html" (dict "context" . "site" $.Site) }}
+          {{ with .summary }}
+            <p itemprop="description">{{ . }}</p>
+          {{ end }}
+          {{ with .highlights }}
+            <h4>Interventions</h4>
+            <ul class="highlight-list">
+              {{ range . }}
+                <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </div>
+      </article>
+    {{ end }}
+  </section>
+{{ end }}
