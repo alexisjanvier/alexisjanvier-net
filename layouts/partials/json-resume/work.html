@@ -3,36 +3,38 @@
   <section id="experience">
   <h2 class="section-title">Experiences professionnelles</h2>
     {{ range . }}
-      <article class="job" itemscope itemtype="http://schema.org/Event/Job">
-        <h3 itemprop="name">{{ .position }}</h3>
-        <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-            {{ if .website }}
-              <a itemprop="url" href="{{ .website }}"><span itemprop="name">{{.company}}</span></a>
-            {{ else }}
-              <span itemprop="name">{{.company}}</span>
-            {{ end }}
-            {{ if .description }}
-              <span> - {{ .description }}</span>
-            {{ end }}
-            {{ if .location }}
-              <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"> -
-                <span itemprop="addressLocality"> {{ .location }}</span>
-              </span>
-            {{ end }}
-        </span>
-        <br />
-        {{ partial "json-resume/duration.html" (dict "context" . "site" $.Site) }}
-        {{ with .summary }}
-          <p itemprop="description">{{ . }}</p>
-        {{ end }}
-        {{ with .highlights }}
-          <h4>Faits marquants</h4>
-          <ul class="highlight-list">
-            {{ range . }}
-              <li>{{ . }}</li>
-            {{ end }}
-          </ul>
-        {{ end }}
+      <article class="job" itemprop="alumniOf">
+        <div itemscope itemtype="https://schema.org/OrganizationRole">
+          <h3 itemprop="roleName">{{ .position }}</h3>
+          <span itemscope itemtype="http://schema.org/Organization">
+              {{ if .website }}
+                <a itemprop="url" href="{{ .website }}"><span itemprop="name">{{.company}}</span></a>
+              {{ else }}
+                <span itemprop="name">{{.company}}</span>
+              {{ end }}
+              {{ if .description }}
+                <span> - {{ .description }}</span>
+              {{ end }}
+              {{ if .location }}
+                <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"> -
+                  <span itemprop="addressLocality"> {{ .location }}</span>
+                </span>
+              {{ end }}
+          </span>
+          <br />
+          {{ partial "json-resume/duration.html" (dict "context" . "site" $.Site) }}
+          {{ with .summary }}
+            <p itemprop="description">{{ . }}</p>
+          {{ end }}
+          {{ with .highlights }}
+            <h4>Faits marquants</h4>
+            <ul class="highlight-list">
+              {{ range . }}
+                <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          {{ end }}
+        </div>
       </article>
     {{ end }}
   </section>

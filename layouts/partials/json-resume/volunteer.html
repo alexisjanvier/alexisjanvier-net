@@ -4,7 +4,7 @@
   <h2 class="section-title">Bénévolat</h2>
     {{ range . }}
       <article class="volunteer" itemprop="memberOf">
-        <div itemscope itemtype="http://schema.org/Event/Organization">
+        <div itemscope itemtype="http://schema.org/Organization">
           <h3>{{ .position }} - <span itemprop="name">{{ .organization }}</span></h3>
           <span itemprop="location" itemscope itemtype="http://schema.org/Place">
             {{ if .website }}
