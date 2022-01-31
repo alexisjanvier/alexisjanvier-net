@@ -3,7 +3,7 @@ title: "Pourquoi choisir JSON Resume pour maintenir son CV"
 slug: pourquoi-choisir-json-resume-pour-maintenir-son-curriculum-vitae
 description: "Maintenir régulièrement à jour son curriculum vitæ dans un secteur d’activité où l’on est (trop ?) souvent amené à changer d’employeurs ou de clients, c’est faire preuve de prévoyance. Mais s’imaginer que ses projets publics sur Github ou son profil LinkedIn suffisent, c’est sans doute un manque de clairvoyance. Une meilleure stratégie pour conserver les traces de son parcours professionnel consiste à investir sur un format dédié et interopérable : le JSON Resume."
 date: 2022-01-31
-draft: true
+draft: false
 in_search_index: true
 tags:
 - métier
@@ -102,7 +102,7 @@ Pour cela, il existe [un module Hugo](https://github.com/schnerring/hugo-mod-jso
   <section id="experience">
   <h2 class="section-title">Experiences professionnelles</h2>
     {{ range . }}
-      <article class="job" itemscope itemtype="http://schema.org/Event/Job">
+      <article class="job" itemscope itemtype="http://schema.org/Job">
         <h3 itemprop="name">{{ .position }}</h3>
         <span itemprop="location" itemscope itemtype="http://schema.org/Place">
             {{ if .website }}
@@ -148,7 +148,7 @@ Il n'existe par exemple pas de définition d'un curriculum vitæ (resume) sur [s
 
 Une piste consiste alors à faire le mapping de certaines entités sur des entités existantes sur schema.org. Le projet [resumeToJSONLD](https://github.com/bollwyvl/resumeToJSONLD) est sans doute capable d'automatiser cela, mais du fait de son âge, je n'ai pas pris le temps de le tester (il nécessite un node 8 et m'obligeait donc à lancer le projet dans un Docker. Je n'ai pas encore pris le temps de le faire).
 
-Une autre solution consiste à réaliser ce mapping directement dans le HTML via des [Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata). Pour les plus attentifs, c'est ce que j'ai fait dans mes templates Hugo (`<article class="job" itemscope itemtype="http://schema.org/Event/Job">`).
+Une autre solution consiste à réaliser ce mapping directement dans le HTML via des [Microdata](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata). Pour les plus attentifs, c'est ce que j'ai fait dans mes templates Hugo (`<article class="job" itemscope itemtype="http://schema.org/Job">`).
 
 Mais c'est un sujet intéressant à creuser, car ce serait un vrai plus de pouvoir rendre son CV compatible avec un [Pod Solid](https://inrupt.com/solid).
 
