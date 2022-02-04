@@ -3,7 +3,7 @@ title: "Mes commandes git"
 slug: mes-commandes-git
 description: "Intro git"
 date: 2022-02-03
-draft: false
+draft: true
 in_search_index: true
 tags:
 - tooling

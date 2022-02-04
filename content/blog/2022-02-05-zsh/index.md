@@ -3,7 +3,7 @@ title: "Pourquoi j'ai choisi le shell zsh"
 slug: pourquoi-jai-choisi-le-shell-zsh
 description: "Intro zsh"
 date: 2022-02-03
-draft: false
+draft: true
 in_search_index: true
 tags:
 - tooling

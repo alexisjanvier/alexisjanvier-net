@@ -3,7 +3,7 @@ title: "L’émulateur de terminal Kitty"
 slug: lemulateur-de-terminal-kitty
 description: "Intro kitty"
 date: 2022-02-03
-draft: false
+draft: true
 in_search_index: true
 tags:
 - tooling

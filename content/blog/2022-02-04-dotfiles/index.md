@@ -2,7 +2,7 @@
 title: "Un atelier ouvert et transposable grâce aux dotfiles"
 slug: un-atelier-ouvert-et-transposable-grace-aux-dotfiles
 description: "Intro dotfiles"
-date: 2022-02-03
+date: 2022-02-04
 draft: false
 in_search_index: true
 tags:
