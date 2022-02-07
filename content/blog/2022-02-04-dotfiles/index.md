@@ -1,7 +1,7 @@
 ---
 title: "Un atelier ouvert et transposable grâce aux dotfiles"
 slug: un-atelier-ouvert-et-transposable-grace-aux-dotfiles
-description: "Intro dotfiles"
+description: "Prendre l’outil en main est un passage obligé lorsque l’on découvre la console. On va apprendre les clis usuelles et leurs options, faire des alias, en installer de nouvelles, les configurer, les associer via des scripts… L’un des avantages de notre métier, c’est que cette somme d’expériences de « mise à la main » de l’outil peut être persistée par la voie de de simples fichiers textes qui pourront être sauvegardés, répliqués et partagés : les dotfiles. Cependant, la gestion de ces fichiers implique quelques efforts sous peine de se retrouver dans sa chambre d’ado."
 date: 2022-02-04
 draft: false
 in_search_index: true
@@ -9,13 +9,11 @@ tags:
 - tooling
 ---
 
-L'une des choses trés chouette avec aussi le shell que beaucoup de cli, c'est que tout est configurable et personnalisable : les alias de commandes, les auto-completions, les thémes de console, les pattern d'affichage te sortie de processus, ...
 
-Et sous Unix, toutes ces configuration se font le plus souvent via de simple fichiers textes présent dans le répertoire de l'utilisateur. Ce sont des fichiers ou des dossiers classiquement cachés par le navigateur du fichier. Leur nom est précédé d’un point — d’où leur nom générique de dotfile — et l’utilisateur doit demander explicitement leur affichage.
-
-C’est pour cela que beaucoup de personnes, dont moi ;),  portent une attention particulière à la gestion et/ou la centralisation de ces fichiers : cela permet aussi bien le partage de la configuration d’un logiciel particulier qu'une migration facilitée de son environnement de travail d’un poste à l’autre. Bref, un atelier mobile et partageable.
 
 ## Le principe
+
+Sous Unix, on configure beacoup de chose, presque tout en fait, via de simple fichiers textes présent dans le répertoire de l'utilisateur. Ces fichiers ou ces dossiers sont généralement cachés par le navigateur du fichier. Leur nom est précédé d’un point — d’où leur nom générique de dotfile — et l’utilisateur doit demander explicitement leur affichage.
 
 Prenons la configuration de deux outils : [Starship](https://starship.rs/) et [lsd](https://github.com/Peltoche/lsd). Les deux sont configurables via un fichier dans le répertoire `~/.config` :
 
@@ -26,9 +24,11 @@ Prenons la configuration de deux outils : [Starship](https://starship.rs/) et [l
 └── starship.toml
 ```
 
-> Et oui, tous les dotfiles ne sont pas prefixés par un `.` ... Mais on considére que tous les fichiers présent dans `~/.config` sont des dotfiles ;)
+> Tous les dotfiles ne sont pas prefixés par un `.` ... Mais on considére que tous les fichiers présent dans `~/.config` sont des dotfiles.
 
-L'idée va être de regrouper ces fichiers au sein d'un unique répertoire, par exemple `~/.dotfiles`, et de versionner ce répertoire avec `git` pour le sauvegarder et pouvoir facillement le partager
+Mais on va aussi retrouver beaucoup de *dotfiles* directement dans le répértoire `home` de l'utilisateur : `.gitconfig`, `.bashrc`, `.npm`, `.vimrc`, ...
+
+L'idée va être de tous les regrouper au sein d'un unique répertoire, par exemple `~/.dotfiles`, et de versionner ce répertoire avec `git` pour le sauvegarder et pouvoir facilement le partager.
 
 ```bash
 .dotfiles
