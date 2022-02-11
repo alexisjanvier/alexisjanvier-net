@@ -1703,6 +1703,7 @@ ol {
 ul li,
 ol li {
   margin-bottom: 0;
+  margin-left: 2rem;
 }
 .footnotes p {
   margin: 0;
@@ -1950,4 +1951,10 @@ ul.highlight-list {
 }
 ul.highlight-list li {
   margin-left: 1rem;
+}
+
+kbd {
+  border-radius: 3px;
+  padding: 5px;
+  border: 1px solid black;
 }

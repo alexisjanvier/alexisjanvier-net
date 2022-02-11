@@ -1,31 +1,27 @@
 ---
-title: "Pourquoi j'ai choisi le shell zsh"
-slug: pourquoi-jai-choisi-le-shell-zsh
-description: "Intro zsh"
-date: 2022-02-03
-draft: true
+title: "Pourquoi j'utilise le shell zsh"
+slug: pourquoi-j-utilise-le-shell-zsh
+description: "Pour ce troisième article de ma série sur la console, je n’imposerais pas une énième comparaison entre bash et zsh. Et pour une bonne raison : je n’ai pas opté pour zsh sur un choix réfléchi et éclairé, mais juste parce que quelqu’un qui connaissait les outils console beaucoup mieux que moi me l’avait conseillé. Ce billet ne traitera pas non plus des grands motifs pour lesquels choisir zsh, mais plutôt des petites choses faisant que j’ai continué à l’utiliser et qui pourraient me servir d’arguments pour vous le recommander."
+date: 2022-02-11
+draft: false
 in_search_index: true
 tags:
 - tooling
 ---
 
-Rassurez-vous, je ne vais pas ici me lancer dnas une grande comparaision entre `bash` et `zsh`. Et entre autre pour une bonne raison : je  n'ai moi-même pas utilisé `zsh` sur un choix raisonné et éclairé, mais juste parce que quelqu'un qui connaissait les outils console beaucoup mieux que moi me l'avait conseillé.
-
-Donc ce post de blog ne traitera pas du pourquoi - et oui du coup le titre est un peu mensongé - mais plutôt des choses qui font que j'ai continué à l'utiliser et qui pourrait me servir d'arguments pour à mon tour vous le conseiller.
+J’utilise dans ce billet plusieurs exemples de configuration. C'est pourquoi (et pour faire suite à l’article sur les `dotfiles`) je ne vais pas commencer par des fonctionnalités de zsh mais plutôt aborder sa configuration.
 
 ## Les fichiers de configuration
 
-Cette première partie n'est pas un argument en faveur de `zsh`, c'est juste que pour la suite, je donnerais des exemples de configuration, et pour cela, il me semblait plus logique de commencer par un petit point sur ces fichiers de configuration et sur ma propre organisation.
+À minima, il faut un fichier`~/.zshrc`, tout comme on trouve un `~/.bashrc` lorsque l'on utilise `bash`. Mais `zsh` s'appuie en fait sur 5 fichiers de configuration qu'il va essayer de lire dans un ordre spécifique :
 
-Donc à minima, on va avoir un fichier `~/.zshrc`, tout comme on trouve un `~/.bashrc` lorsque l'on utilise `bash`. Mais officiellement, `zsh` va chercher dans 5 fichiers de configuration dans un ordre spécifique :
+1. **`~/.zshenv`** - Ce fichier va contenir les variables d'environnement de l'utilisateur. Il est lu en premier, et les variables d'environnement déclarées pourront donc être utilisées dans le fichier suivant.
+2. **`~/.zprofile`** - Ce fichier va pouvoir contenir des commandes qui seront lancées à la connexion de l'utilisateur.
+3. **`~/.zshrc`** - Il s'agit du fichier principal de configuration du Shell. C'est le seul obligatoire, et dans l'absolue, il pourrait contenir les autres fichiers (déclaration des variables d'environnement, des commandes ...)
+4. **`~/.zlogin`** - Ce fichier va pouvoir contenir des commandes qui seront lancées à la connexion de l'utilisateur, tout comme le `~/.zprofile`. Mais contrairement à ce dernier, il est lu après le `~/.zshrc`.
+5. **`~/.zlogout`** - Ce fichier va pouvoir contenir des commandes qui seront lancées à la déconnexion de l'utilisateur.
 
-1. `~/.zshenv` - Ce fichier va contenir les variables d'environnement de l'utilisateur. Il est lû en premier, et les variables d'environnement déclarée pouront donc être utilisées dans le fichiers suivant.
-2. `~/.zprofile` - Ce fichier va pouvoir contenir des commandes qui seront lancée à la connexion de l'utilisateur.
-3. `~/.zshrc` - Il s'agit du fichier principale de configuration du shell. C'est le seul obligatoire, et dans l'absolue, il pourrait contenir les autres fichiers (déclartion des variables d'environnement, des commandes, ...)
-4. `~/.zlogin` - Ce fichier va pouvoir contenir des commandes qui seront lancée à la connexion de l'utilisateur, tout comme le `~/.zprofile`. Mais contrairement à ce dernier, il est lû aprés le `~/.zshrc`.
-5. `~/.zlogout` - Ce fichier va pouvoir contenir des commandes qui seront lancée à la déconnexion de l'utilisateur.
-
-Pour ma part, et parce que pour tout dire je ne serrais pas quoi mettre dans les autres, je n'utilise que `~/.zshenv` et `~/.zshrc`. Par contre, j'ai découpé l'organisation de ces fichiers en quelques sous fichiers, pour par exemple avoir un fichier dédié aux alias ou encore un fichier de variables d'environnement privées que je ne souhaite pas partager dans mes `dotfiles`. Voila ce que cela donne :
+Pour ma part, et parce que pour tout dire je ne saurais pas quoi mettre dans les autres, je n'utilise que `~/.zshenv` et `~/.zshrc`. Par contre, j'ai découpé l'organisation de ces fichiers en quelques sous-fichiers, pour par exemple avoir un fichier dédié aux alias ou encore un fichier de variables d'environnement privées que je ne souhaite pas partager dans mes `dotfiles`. Voilà ce que cela donne :
 
 ```shell
 ~
@@ -46,7 +42,7 @@ Pour ma part, et parce que pour tout dire je ne serrais pas quoi mettre dans les
 └── .config-private ⇒ .dotfiles-private
 ```
 
-Et par exemple, voila ce qu'on trouve dans mon `~/.zshenv` :
+Et voici un extrait de ce que l'on trouve dans mon `~/.zshenv` :
 
 ```shell
 ######
@@ -67,22 +63,23 @@ if [ -f "$ZDOTDIR/aliases" ] ; then
 fi
 ```
 
-## L'auto-completion
-L'auto-completion est clairement un des points forts de `zsh`. Il faut avant tout l'activer :
+## La complétion
+
+La complétion est clairement l'un des points forts de `zsh`. Il faut avant tout l'activer :
 
 ```shell
 # in ~/.zshrc
 autoload -Uz compinit && compinit
 ```
 
-Ceci fait, il ne reste plus qu'à utiliser la touche <kbd>tab</kbd> lorsque l'on tappe une commande pour mettre en route l'auto-completion.
+Ceci fait, il ne reste plus qu'à utiliser la touche {{< keyboard key="tab" >}} lorsque l'on tappe une commande pour la mettre à contribution.
 
-Ce serait très long de parler de toutes les fonctionnalités d'autocompletion offertes par `zsh`, mais voila celles qui me semble les plus parlantes.
+Ce serait très long de parler de toutes les facettes d'autocompletion offertes par `zsh`, mais en voici quelque unes qui me semblent significatives :
 
-- l'auto-completion simple : si l'on tappe  `$ cd /user/lo` + <kbd>tab</kbd>, on obtient  `$ cd /usr/local`,
-- l'expansion récursive du chemin : si l'on tappe  `$ cd /u/lo/b` + <kbd>tab</kbd>, on obtient  `$ cd /usr/local/bin`.
+- la completion simple : si l'on tappe  `$ cd /user/lo` + {{< keyboard key="tab" >}}, on obtient  `$ cd /usr/local`,
+- l'expansion récursive du chemin : si l'on tappe  `$ cd /u/lo/b` + {{< keyboard key="tab" >}}, on obtient  `$ cd /usr/local/bin`.
 
-`zsh` posséde aussi nativement une auto-completion sur les clis les plus usuelles. Par exemple, si l'on tappe  `$ cp -` + <kbd>tab</kbd>, on obtient :
+`zsh` posséde aussi nativement une completion sur les clis les plus usuelles. Par exemple, si l'on tappe  `$ cp -` + {{< keyboard key="tab" >}}, on obtient :
 
 ```shell
 $ cp -
@@ -99,57 +96,60 @@ $ cp -
  -v  -- show file names as they are copied
 ```
 
-Et si l'auto-completion de votre cli préférée n'est pas disponible, c'est assey facile car bien documenté de la faire soit même. Et en fait, il est fort probable que quelqu'un l'ai déja fait pour vous. En effet, `zsh` étant trés configurable et extensible, il existe plusieurs projets centralisant toutes ces extentions jugées suffisament communes pour être partagées. Et l'une des plus connue est [Oh My Zsh - a delightful & open source framework for Zsh](https://ohmyz.sh/)
+Mais si la complétion de votre cli préférée n'est pas disponible, c'est assez facile, car bien documenté, de la faire soit même. En fait, il est fort probable que quelqu'un l'ait déjà fait pour vous. De par sa nature très configurable et extensible, `zsh` a inspiré plusieurs projets centralisant toutes ces préconfigurations jugées suffisamment communes pour être partagés. Et l'une des plus connues est [Oh My Zsh - a delightful & open source framework for Zsh](https://ohmyz.sh/)
 
-## Oh-my-zsh
-Oh-my-zsh donne accés à beaucoup de chose : des [thémes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) permettant de modifier completement l'aspet du terminal et/ou du prompt, d'ajouter des alias sur les commandes les plus usuelles, des auto-completions ...
+## Oh My Zsh
 
-De mon côté - même si je l'ai longtemps fait - je n'utilise pas de themes. Par contre, j'utilise plusieurs plugins natifs, comme :
+{{< quoteright "Oh My Zsh est un charmant framework, open source, piloté par la communauté, pour gérer votre configuration Zsh. Il est livré avec des milliers de fonctions utiles, d'aides, de plugins, de thèmes, et quelques trucs qui vous font crier... 'Oh My ZSH!'" >}}
+
+`Oh My Zsh` donne accés à beaucoup de chose : des [thémes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) permettant de modifier completement l'aspet du terminal et/ou du prompt, d'ajouter des alias sur les commandes les plus usuelles, des auto-completions ...
+
+De mon côté - même si je l'ai longtemps fait - je n'utilise pas de themes. Par contre, j'utilise quelques plugins natifs, comme :
 
 - [docker-compose](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker-compose): des auto-completions pour `docker` et `docker-compose`,
 - [safe-paste](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/safe-paste) : empêcher l'exécution de tout code pendant le collage, afin qu'on puisse vérifier ce qui a été collé avant de l'exécuter,
 - [vi-mode](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/vi-mode) : voir la "le mode vi".
 
- Et j'en ai installé plusieurs autres :
+ Et j'ai installé plusieurs plugins externes au projet :
  
  - [zsh-completions](https://github.com/zsh-users/zsh-completions) : améliore les auto-completion native de `zsh`
  - [zsh-kitty](https://github.com/redxtech/zsh-kitty) : une auto-completion pour `kitty`,
- - [zshmarks](https://github.com/jocelynmallon/zshmarks) : un plugin simple de mise en favoris des lignes de commande, pour oh-my-zsh
+ - [zshmarks](https://github.com/jocelynmallon/zshmarks) : un plugin simple de mise en favoris des lignes de commande, pour oh-my-zsh.
 
 ## Le mode vi
 
-Cette fonctionnalité n'interressera sans-doute que les utilisateurs de  `vim` (ou d'`emacs` puisqu'il existe aussi un mode emacs), mais il est possible d'activer le mode vi :
+Cette fonctionnalité n'intéressera sans doute que les utilisateurs de  `vim` (ou d'`emacs` puisqu'il existe aussi un mode emacs), mais il est possible d'activer le mode vi :
 
 ```shell
 # in ~/.zshrc
 bindkey -v
 ```
 
-Couplé au plugin Oh-my-zsh [vi-mode](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/vi-mode), on va maintenant pouvoir en appuyant sur <kbd>Esc</kbd>  passer en mode `normal` de vim et utiliser les raccourcies standard (h, l, e, E ...) pour se déplacer et éditer la commande en cours.
+Couplé au plugin Oh-my-zsh [vi-mode](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/vi-mode), on peut alors en appuyant sur {{< keyboard key="Esc" >}} passer en mode `normal` de vim et utiliser les raccourcies standard (h, l, e, E ...) pour se déplacer et éditer la commande en cours.
 
 ## Alias global et alias de suffixe
 
-Si on peut créer des aliases avec `bash`, on ne peut les utiliser qu'en début de commande. Avec `zsh`, on va pouvoir déclarer un aliase global `-g` utilisables n'importe ou dans la ligne de commande. Par exemple :
+Si l'on peut créer des alias avec `bash`, on ne peut les utiliser qu'en début de commande. Avec `zsh`, on peut déclarer un alias global `-g` utilisable n'importe où dans la ligne de commande. Prenons un exemple :
 
 ```shell
 # in ~/.config/zsh/aliases
 alias -g L='|less'
 ```
 
-On va pouvoir lancer la commande `$ ls -la /etc L`
+Cela permet maintenant de lancer la commande `$ ls -la /etc L`
 
-Les alias de suffixes `-s` vont eux permettent d'indiquer à zsh d'ouvrir les fichiers avec certaines extensions. Par exemple  :
+Dans la même veine, les alias de suffixes `-s` vont permettent d'indiquer à zsh d'ouvrir les fichiers avec un éditeur configuré pour certaines extensions. Prenons un exemple  :
 
 ```shell
 # in ~/.config/zsh/aliases
 alias -s js="nvim"
 ```
 
-Maintenant, en tappant la commande `$ ./index.js`, cela ouvrira le fichier directement dans vim.
+Dorénavant, la commande `$ ./index.js` ouvre le fichier directement dans vim.
 
-## L'auto-correction
+## L'autocorrection
 
-J'ai tout d'abord découvert cette fonctionnalité avec [thefuck](https://github.com/nvbn/thefuck), et je ne crois pas que ce soit un *must-have*. N'en reste pas moins que c'est disponible nativement dans `zsh` :
+J'ai découvert cette fonctionnalité avec [thefuck](https://github.com/nvbn/thefuck) et je ne crois pas que ce soit un *must-have*. N'en reste pas moins que c'est disponible nativement dans `zsh` :
 
 ```shell
 # in ~/.zshenv
@@ -170,4 +170,12 @@ Fix eco to echo ? [y:Yes, n:No, a:Abord, e:Edit]
 
 ## Petit bilan
 
-Je n'ai fait qu'effleurer le potentiel de `zsh` en me focalisant sur les points les plus ... ergonomiques. Mais c'est déja pas mal. Pour tout de même donner un début de réponse à la question titre de ce post, *"Pourquoi j'ai choisi le shell zsh"*, je résumerais donc par : parce que c'est un shell utra configurable et personnalisable, personnalisation rendue d'autant plus facile par l'existance de projets comme Oh-my-zsh. Il offre aussi des fonctionnalités de (auto-)complétion trés poussées, une gestion des alias améliorées et, pour qui connait vim, un mode vi vraiment pratique dés que l'on doit tapper des commandes un peu longue.
+Je n'ai fait que survoler le potentiel de `zsh`, en me focalisant sur les points les plus ... ergonomiques. Ceux que je connais le mieux en fait.
+
+Mais si le titre de cet article avait été une question *"Pourquoi j'utilise le Shell zsh ?"*, je répondrais en guise de conclusion : 
+
+- parce que c'est un Shell utra configurable et personnalisable,
+- cette personnalisation est facilitée par l'existence de projets comme Oh-my-zsh,
+- il offre des fonctionnalités de complétion très poussées (entre autres dans l'historique de la console),
+- il offre une gestion des alias améliorée,
+- pour qui connait vim, il offre un mode vi vraiment pratique dès que l'on doit taper des commandes un peu longues.
