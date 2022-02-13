@@ -40,6 +40,8 @@
     </ul>
 </section>
 {{ end }}
+<script defer src="https://cdn.commento.io/js/commento.js"></script>
+<div id="commento"></div>
 {{ end }}
 {{ define "prism" }}
 {{ $prism := resources.Get "js/prism.js" | resources.Fingerprint "sha256" }}
