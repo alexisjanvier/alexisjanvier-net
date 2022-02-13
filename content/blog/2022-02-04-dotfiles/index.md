@@ -1,7 +1,7 @@
 ---
-title: "Un atelier ouvert et transposable grâce aux dotfiles"
-slug: un-atelier-ouvert-et-transposable-grace-aux-dotfiles
-description: "Dès que l'on commence à utiliser quotidiennement le terminal, on commence à l'adapter à ses habitudes via des fichiers de configuration : les dotfiles. Ce second article aborde la localisation de ces fichiers, mais aussi ma stratégie me permettant de les maintenir organisés. Et si il existe plusieurs outils pour effectuer cette tâche, je parle de celui que j'utilise maintenant : Stow."
+title: "Un terminal transposable grâce aux dotfiles"
+slug: un-terminal-transposable-grace-aux-dotfiles
+description: "Dès que l'on commence à utiliser quotidiennement le terminal, on cherche à l'adapter à ses habitudes via des fichiers de configuration : les dotfiles. Ce second article aborde l'organisation de ces fichiers, mais aussi une stratégie permettant de les sauvegarder et donc de les partager. Et s'il existe plusieurs outils pour effectuer cette tâche, je parle de celui que j'utilise maintenant : Stow."
 date: 2022-02-08
 draft: false
 in_search_index: true
@@ -12,7 +12,7 @@ series:
     - Mon terminal
 ---
 
-Prendre l’outil en main est un passage obligé lorsque l’on découvre la console. On va apprendre les clis usuelles et leurs options, faire des alias, en installer de nouvelles, les configurer, les associer dans des scripts… L’un des avantages de notre métier, c’est que cette somme d’expériences de “mise à la main” de l’outil est enregistrable dans de simples fichiers textes fongibles : les dotfiles. Cependant, la gestion de ces fichiers implique quelques efforts sous peine de s’y perdre.
+Prendre l’outil en main est un passage obligé lorsque l’on découvre la console. On va apprendre les clis usuelles et leurs options, faire des alias, en installer de nouvelles, les configurer, les associer dans des scripts… L’un des avantages de notre métier, c’est que cette somme d’expériences de “mise à la main” de l’outil est enregistrable dans de simples fichiers textes fongibles. Cependant, la gestion de ces fichiers implique quelques efforts sous peine de s’y perdre.
 
 ## Le principe
 

@@ -1,7 +1,7 @@
 ---
 title: "Mes commandes Git"
 slug: mes-commandes-git
-description: "Ce sixième et dernier article de la série sur mon terminal aborde la commande que j'utilise le plus : git. Je fais le tour de mes alias, des cli et des scripts que j'ai pu ajouter au cours de mes années de pratique quotidienne, et d'un script unifiant se foisonnement de commandes devenues hétérogènes : gitt."
+description: "Ce sixième et dernier article de la série sur mon terminal aborde la commande que je lance le plus souvent (historique zsh à l'appui) : git. J'y explique mes alias de configuration, les cli et les scripts que j'ai pu ajouter au cours du temps, ainsi qu'un script unifiant se foisonnement de commandes devenues hétérogènes : gitt."
 date: 2022-02-12
 draft: false
 in_search_index: true
@@ -77,11 +77,15 @@ J'ai par exemple un `git fixup` qui va ajouter automatiquement une modification 
 
 ## Des cli supplementaires
 
-On trouve énormément de projets dont l'objectif est d’améliorer la cli native de Git, à commencer par `Oh My Zsh` dont j’ai déjà parlé. Mais les fonctionnalités ou les raccourcis offerts ne m’ont que rarement paru probant par rapport à ce que l’on peut mettre soit même dans son `. gitconfig`.
+On trouve énormément de projets dont l'objectif est d’améliorer la cli native de Git, à commencer par `Oh My Zsh` [dont j’ai déjà parlé](/blog/pourquoi-j-utilise-le-shell-zsh/#oh-my-zsh). Mais les fonctionnalités offertes ne m’ont pas paru probantes par rapport à ce que l’on peut mettre soit même dans son `. gitconfig`.
 
-Un outil dont j'ai souvent eu à discuter est [gitflow](https://github.com/petervanderdoes/gitflow-avh). Et pour faire court, je le déteste. Tout d'abord, il impose des sortes d'alias métier qui ne sont pas les miens (je n'aime pas qu'un outil lance des commandes git les branches ou les tags du dépôt à ma place), et je trouve son modèle de branche bien trop compliqué. Sur les petits projets, j'aime travailler avec une unique branche `main` (je dois confesser que `main` se prononce encore `master` dans ma tête, mais j'aime beaucoup l'argument qui dit que `main` est bien plus inclusif !). Et pour des projets plus conséquents, incluants par exemple un environnement de staging, une branche `main` et une branche `develop`. Au-delà, je suis persuadé que la complexité nuit à la fluidité.
+Un outil dont j'ai souvent débattu avec des collègues est [gitflow](https://github.com/petervanderdoes/gitflow-avh). Et pour faire court, je le déteste. Il impose des sortes d'alias métier qui ne sont pas les miens (je n'aime pas qu'un outil lance des commandes git sur les branches ou les tags du dépôt à ma place), et je trouve son modèle de branche bien trop compliqué.Sur les petits projets, j'aime travailler avec une unique branche `main`.
 
-Pour autant, certain de ces projets apportent un réel confort par rapport aux possibilités offertes nativement par Git. Voici ceux que j'utilise.
+> Au passage, je dois confesser que `main` se prononce encore `master` dans ma tête, mais j'aime beaucoup l'argument qui dit que `main` est bien plus inclusif !
+
+Et pour des projets plus conséquents, incluants par exemple un environnement de staging, une branche `main` et une branche `develop`. Au-delà, je suis persuadé que la complexité nuit à la fluidité.
+
+Pour autant, certains de ces projets apportent un réel confort par rapport aux possibilités natives de Git. Voici ceux que j'utilise.
 
 ### delta
 [delta](https://github.com/dandavison/delta) améliore l'affichage des commandes `git diff` et `git blame`.
@@ -89,7 +93,7 @@ Pour autant, certain de ces projets apportent un réel confort par rapport aux p
 {{< img src="delta.png" alt="un git blame affiché avec delta" >}}
 
 ### gh
-[gh](https://github.com/cli/cli) est la cli officielle de Github. Et ce n'est pas facile aujourd'hui de travailler en se passant de Github, tant cet outil est incroyablement puissant (outils de revue de code, les Github actions, les webhooks, la gestion de packages, la gestion des releases...). Il est aussi largement utilisé par la communauté open source et par notre industrie. Ce n'est pas impossible de travailler sans, Github n'est pas Git. Mais si au moins une partie de vos projets sont sur Github, et que vous y utilisez des fonctionnalités un petit peu avancées, la cli officielle est un incontournable.
+[gh](https://github.com/cli/cli) est la cli officielle de Github. Et ce n'est pas facile aujourd'hui de travailler en se passant de Github, tant cet outil est incroyablement puissant (outils de revue de code, les Github actions, les webhooks, la gestion de packages, la gestion des releases...). Il est aussi largement utilisé par la communauté open source et par notre industrie. Ce n'est pas impossible de travailler sans, Github n'est pas Git (maintenant Github c'est Microsoft), mais ce ne sera pas toujours facile à justifier. Donc si au moins une partie de vos projets sont sur Github, et que vous y utilisez des fonctionnalités un petit peu avancées, la cli officielle est un incontournable.
 
 {{< img src="gh-worflow.png" alt="Visualiser un workflow github action depuis sa console" >}}
 
@@ -99,7 +103,7 @@ L'objectif de [gitui](https://github.com/extrawurst/gitui) est d'apporter l'ergo
 
 {{< mp4 src="gitui.mp4" alt="gitui en action (demo officielle)" >}}
 
-Dans l'absolue, on doit pouvoir gérer tout son flux git en restant dans gitui. À mon avis, si c'est ce qui est recherché, mieux vaut utiliser une vraie interface graphique du type [Sourcetree](https://www.sourcetreeapp.com/) ou [GitKraken](https://www.gitkraken.com/). Mais j'aime tout de même bien avoir gitui sous la main pour découvrir rapidement un nouveau dépôt ou faire un peu d'archéologie sur un vieux projet.
+Dans l'absolue, on doit pouvoir gérer tout son flux git en restant dans `gitui`. À mon avis, si c'est ce qui est recherché, mieux vaut utiliser une vraie interface graphique du type [Sourcetree](https://www.sourcetreeapp.com/) ou [GitKraken](https://www.gitkraken.com/). Mais j'aime tout de même bien avoir `gitui` sous la main pour découvrir rapidement un nouveau dépôt ou faire un peu d'archéologie sur un vieux projet.
 
 ### tokei
 [tokei](https://github.com/XAMPPRocky/tokei) génère une analyse statique des lignes de code d'un projet.
@@ -110,7 +114,7 @@ Oui, tokei n'a pas de rapport direct avec Git, mais j'y reviendrais un peu plus 
 
 ## Des scripts
 
-En plus des cli supplémentaires, j'ai créé, copié ou modifié un certain nombre de scripts et de fonctions qui me facilitent la vie. Ces scripts s'appuient souvent sur des outils évoqués dans l'article précédent "Mes commandes du quotidien'.
+En plus des cli supplémentaires, j'ai créé, copié ou modifié un certain nombre de scripts et de fonctions qui me facilitent la vie. Ces scripts s'appuient souvent sur des outils évoqués dans l'article précédent ["Mes commandes du quotidien"](/blog/mes-commandes-du-quotidien/).
 
 J'ai par exemple une fonction qui me permet de basculer d'une branche à l'autre de manière interactive, en utilisant fzf :
 

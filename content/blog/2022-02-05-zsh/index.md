@@ -12,7 +12,7 @@ series:
     - Mon terminal
 ---
 
-J’utilise dans ce billet plusieurs exemples de configuration. C'est pourquoi (et pour faire suite à l’article sur les `dotfiles`) je ne vais pas commencer par des fonctionnalités de zsh mais plutôt aborder sa configuration.
+J’utilise dans ce billet plusieurs exemples de configuration. C'est pourquoi (et pour faire suite à [l’article sur les `dotfiles`](blog/un-terminal-transposable-grace-aux-dotfiles/)) je ne vais pas commencer par des fonctionnalités de zsh mais plutôt aborder sa configuration.
 
 ## Les fichiers de configuration
 
@@ -105,19 +105,19 @@ Mais si la complétion de votre cli préférée n'est pas disponible, c'est asse
 
 {{< quoteright "Oh My Zsh est un charmant framework, open source, piloté par la communauté, pour gérer votre configuration Zsh. Il est livré avec des milliers de fonctions utiles, d'aides, de plugins, de thèmes, et quelques trucs qui vous font crier... 'Oh My ZSH!'" >}}
 
-`Oh My Zsh` donne accés à beaucoup de chose : des [thémes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) permettant de modifier completement l'aspet du terminal et/ou du prompt, d'ajouter des alias sur les commandes les plus usuelles, des auto-completions ...
+`Oh My Zsh` donne accés à beaucoup de chose : des [thèmes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) permettant de modifier completement l'aspet du terminal et/ou du prompt, d'ajouter des alias sur les commandes les plus usuelles, des completions ...
 
-De mon côté - même si je l'ai longtemps fait - je n'utilise pas de themes. Par contre, j'utilise quelques plugins natifs, comme :
+De mon côté - même si je l'ai longtemps fait - je n'utilise pas de thèmes. Par contre, j'utilise quelques plugins natifs, comme :
 
-- [docker-compose](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker-compose): des auto-completions pour `docker` et `docker-compose`,
+- [docker-compose](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker-compose): des completions pour `docker` et `docker-compose`,
 - [safe-paste](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/safe-paste) : empêcher l'exécution de tout code pendant le collage, afin qu'on puisse vérifier ce qui a été collé avant de l'exécuter,
 - [vi-mode](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/vi-mode) : voir la "le mode vi".
 
  Et j'ai installé plusieurs plugins externes au projet :
  
- - [zsh-completions](https://github.com/zsh-users/zsh-completions) : améliore les auto-completion native de `zsh`
- - [zsh-kitty](https://github.com/redxtech/zsh-kitty) : une auto-completion pour `kitty`,
- - [zshmarks](https://github.com/jocelynmallon/zshmarks) : un plugin simple de mise en favoris des lignes de commande, pour oh-my-zsh.
+ - [zsh-completions](https://github.com/zsh-users/zsh-completions) : améliore les completion native de `zsh`
+ - [zsh-kitty](https://github.com/redxtech/zsh-kitty) : une completion pour `kitty`,
+ - [zshmarks](https://github.com/jocelynmallon/zshmarks) : un plugin de mise en favoris des répertoires. Indispensable pour naviguer rapidement d'un projet à l'autre !
 
 ## Le mode vi
 

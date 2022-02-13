@@ -175,7 +175,7 @@ Mais je vais maintenant m'essayer à vous présenter ce qui fait que ma console 
 
 Cette suite se décomposera en 5 articles :
 
-1. [Un atelier ouvert et transposable grâce aux dotfiles](/blog/un-atelier-ouvert-et-transposable-grace-aux-dotfiles)
+1. [Un terminal transposable grâce aux dotfiles](/blog/un-terminal-transposable-grace-aux-dotfiles)
 2. [Pourquoi j'ai choisi le shell zsh](/blog/pourquoi-j-utilise-le-shell-zsh)
 3. [L'émulateur de terminal kitty](/blog/lemulateur-de-terminal-kitty)
 4. [Mes commandes du quotidien](/blog/mes-commandes-du-quotidien)

@@ -12,7 +12,7 @@ series:
     - Mon terminal
 ---
 
-Un très bon choix consisterait à choisir [Rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html) car il est rapide, stable, recommandé, documenté, publié en licence [GNU](https://fr.wikipedia.org/wiki/Licence_publique_g%C3%A9n%C3%A9rale_GNU)... Bref, un outil fiable et éprouvé !
+[Rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html) est un très bon choix [d’émulateur de terminal](/blog/le-terminal-mon-atelier-de-travail/#les-émulateurs-de-terminaux) car il est rapide, stable, recommandé, documenté, publié en licence [GNU](https://fr.wikipedia.org/wiki/Licence_publique_g%C3%A9n%C3%A9rale_GNU)... Bref, un outil fiable et éprouvé !
 
 Mais j’ai choisi [Kitty](https://sw.kovidgoyalthemer.net/kitty/) initialement pour une raison très futile : contrairement à Urxvt, Kitty supporte les ligatures des polices de caractères. Mais au-delà de cette coquetterie, je n’ai absolument pas regretté ce choix.
 
