@@ -6,6 +6,8 @@ city: Paris
 cp: 75000
 organizer: Paris.JS
 link: https://parisjs.org/meetup/2017-06-28/
+tags:
+  - metier
 ---
 
 Retour d'experience sur une première année en télétravail au [Paris.JS](https://parisjs.org/meetup/2017-06-28/).    

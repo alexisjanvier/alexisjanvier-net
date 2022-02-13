@@ -7,9 +7,9 @@ draft: false
 marmelab: https://marmelab.com/blog/2017/10/17/code-splitting.html
 in_search_index: true
 slug: running-react-router-v4,-redux-saga,-ssr-and-code-splitting-together
-categories:
-  - informatique
 tags:
+  - programmation
+  - outillage
   - javascript
 title: Running React Router v4, Redux Saga, SSR and Code Splitting together
 ---

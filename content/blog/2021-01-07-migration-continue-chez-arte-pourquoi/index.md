@@ -5,12 +5,12 @@ draft: false
 marmelab: https://marmelab.com/blog/2021/01/07/migration-continue-chez-arte-pourquoi.html
 in_search_index: true
 slug: migration-continue-chez-arte-pourquoi
-categories:
-  - informatique
 tags:
   - architecture
-  - projet
+  - agilite
 title: 'Histoire d''une migration chez Arte (1/3) : le contexte'
+series:
+- Migration chez Arte
 ---
 
 Pour les besoins de l’un de nos clients, Arte, nous venons d’effectuer un gros changement d’architecture sur leur système d’information. Ce système d’édition de contenus alimente des interfaces d’administration, mais aussi les applications publiques (web, mobile, HbbTv,…) en production. Il a donc fallu rendre ce changement transparent pour tous les utilisateurs.

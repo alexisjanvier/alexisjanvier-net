@@ -7,10 +7,10 @@ draft: false
 extra: {}
 in_search_index: true
 slug: bind-user-on-docker-container
-categories:
-  - informatique
 tags:
+  - outillage
   - devops
+  - docker
 title: Associer un utilisateur à celui d'un container Docker
 ---
 

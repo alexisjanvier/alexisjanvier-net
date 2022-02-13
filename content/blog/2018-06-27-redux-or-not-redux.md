@@ -6,9 +6,8 @@ draft: false
 marmelab: https://marmelab.com/blog/2018/06/27/redux-or-not-redux.html
 in_search_index: true
 slug: managing-state-in-react-redux-or-not-redux
-categories:
-  - informatique
 tags:
+  - programmation
   - javascript
 title: 'Managing State in React: Redux or not Redux?'
 ---

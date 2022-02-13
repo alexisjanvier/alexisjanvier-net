@@ -7,11 +7,12 @@ draft: false
 marmelab: https://marmelab.com/blog/2020/03/26/openapi-dans-la-jungle-du-rest.html
 in_search_index: true
 slug: openapi-dans-la-jungle-du-rest
-categories:
-  - informatique
 tags:
+  - programmation
   - api
 title: OpenAPI dans la jungle du REST
+series:
+  - OpenAPI
 ---
 
 Depuis quelque temps, j'avoue avoir suivi de loin le monde merveilleux des spécifications liées au REST : HATEOAS, JSON-LD, JSON API, HAL, OpenAPI et autres Hydra. Si ces initiatives semblaient donner des réponses intéressantes à des problématiques induites par le flou du style d'architecture REST, le [GraphQL](https://marmelab.com/blog/2017/09/03/dive-into-graphql.html) semblait aussi y donner des bonnes réponses sous un standard unique !

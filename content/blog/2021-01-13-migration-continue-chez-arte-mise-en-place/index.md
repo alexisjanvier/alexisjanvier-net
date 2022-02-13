@@ -5,12 +5,12 @@ draft: false
 marmelab: https://marmelab.com/blog/2021/01/13/migration-continue-chez-arte-mise-en-place.html
 in_search_index: true
 slug: migration-continue-chez-arte-mise-en-place
-categories:
-  - informatique
 tags:
   - architecture
-  - projet
+  - agilite
 title: 'Histoire d''une migration chez Arte (2/3) : la mise en place'
+series:
+- Migration chez Arte
 ---
 
 Le [premier article de cette série](https://marmelab.com/blog/2021/01/07/migration-continue-chez-arte-pourquoi.html) à propos de notre travail d'architecture sur le site [Arte.tv](https://www.arte.tv/) a montré comment le choix d’une base de données de type documentaire, initialement pertinent, nous a conduit dans des impasses fonctionnelles. Et pourquoi nous avons donc prévu une migration vers une base de données relationnelle.

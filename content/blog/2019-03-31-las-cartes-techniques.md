@@ -6,10 +6,8 @@ draft: false
 extra: {}
 in_search_index: true
 slug: les-cartes-techniques
-categories:
-  - informatique
 tags:
-  - projet
+  - agilite
 title: Les cartes techniques
 ---
 

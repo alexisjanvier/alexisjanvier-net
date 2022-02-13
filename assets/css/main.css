@@ -1003,6 +1003,11 @@ body {
     margin-top: 3.125rem;
   }
 }
+.post-description {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  text-indent: 0 !important;
+}
 .post-content {
   max-width: 920px;
 }
@@ -1703,6 +1708,7 @@ ol {
 ul li,
 ol li {
   margin-bottom: 0;
+  margin-left: 2rem;
 }
 .footnotes p {
   margin: 0;
@@ -1759,8 +1765,8 @@ figure blockquote cite {
   margin-bottom: 0;
 }
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+  border-collapse: separate;
+  border-spacing: 0.5rem;
 }
 td,
 th {
@@ -1950,4 +1956,10 @@ ul.highlight-list {
 }
 ul.highlight-list li {
   margin-left: 1rem;
+}
+
+kbd {
+  border-radius: 3px;
+  padding: 5px;
+  border: 1px solid black;
 }

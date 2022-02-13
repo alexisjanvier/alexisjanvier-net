@@ -9,10 +9,9 @@ draft: false
 extra: {}
 in_search_index: true
 slug: journal-intime-dun-developpeur
-categories:
-  - informatique
 tags:
-  - console
+  - terminal
+  - outillage
 title: Journal intime d'un développeur
 ---
 

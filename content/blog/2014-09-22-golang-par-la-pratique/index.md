@@ -5,9 +5,8 @@ draft: false
 marmelab: https://marmelab.com/blog/2014/09/22/golang-par-la-pratique.html
 in_search_index: true
 slug: du-php-au-go-une-semaine-pour-realiser-un-produit-fonctionnel
-categories:
-  - informatique
 tags:
+  - programmation
   - go
 title: 'Du PHP au Go: une semaine pour réaliser un produit fonctionnel'
 ---
