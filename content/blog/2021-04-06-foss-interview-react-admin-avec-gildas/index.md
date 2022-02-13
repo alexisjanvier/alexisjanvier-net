@@ -5,10 +5,9 @@ draft: false
 marmelab: https://marmelab.com/blog/2021/04/06/foss-interview-react-admin-avec-gildas.html
 in_search_index: true
 slug: foss-interview-react-admin-avec-gildas
-categories:
-  - informatique
 tags:
   - foss
+  - video
 title: 'FOSS interview : React-admin avec Gildas'
 ---
 

@@ -5,11 +5,9 @@ draft: false
 marmelab: https://marmelab.com/blog/2021/01/07/migration-continue-chez-arte-pourquoi.html
 in_search_index: true
 slug: migration-continue-chez-arte-pourquoi
-categories:
-  - informatique
 tags:
   - architecture
-  - projet
+  - agilite
 title: 'Histoire d''une migration chez Arte (1/3) : le contexte'
 series:
 - Migration chez Arte

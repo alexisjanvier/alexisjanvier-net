@@ -6,6 +6,9 @@ city: Caen
 cp: 14000
 organizer: Rencontres Interactives
 link: http://rencontres-interactives.net/
+tags:
+  - programmation
+  - javascript
 ---
 
 Introduction à l'[API service worker](https://developer.mozilla.org/fr/docs/Web/API/Service_Worker_API) aux [Rencontres Interactives](http://rencontres-interactives.net/).    

@@ -6,10 +6,11 @@ draft: false
 marmelab: https://marmelab.com/blog/2020/04/17/openapi-un-contrat-pour-vos-apis.html
 in_search_index: true
 slug: openapi-un-contrat-pour-vos-apis
-categories:
-  - informatique
 tags:
+  - programmation
   - api
+series:
+  - OpenAPI
 title: 'OpenAPI : un contrat pour vos API.s'
 ---
 

@@ -6,10 +6,9 @@ draft: false
 extra: {}
 in_search_index: true
 slug: applications-12-facteurs-comment-validez-vous-votre-configuration
-categories:
-  - informatique
 tags:
   - devops
+  - docker
 title: 'Applications 12 facteurs: comment validez-vous votre configuration ?'
 ---
 

@@ -6,7 +6,8 @@ date: 2021-12-27
 draft: false
 in_search_index: true
 tags:
-- self-hosting
+    - infrastructure
+    - hebergement
 ---
 
 J'aime le principe de [l'auto-hébergement](https://framacloud.org/fr/auto-hebergement/intro.html). Ce n'est pas le sujet de ce post. Ce n'est pas non plus la solution à tous nos problèmes (contrôle de ses données, centralisation du web, tracking, ...). Le principe de mutualisation est tout aussi important. Mais pour faire court, j'ai envie de faire vivre à mon échelle cette idée que les contenus - ou tout au moins une partie - disponibles sur le web devraient provenir des personnes/ordinateurs constituant le réseau. D'ailleurs, c'est l'occasion de faire une première remarque : dans cet article, je parlerais d'auto-hébergement web, pas de services du type serveur d'email, partage de fichiers ou d'agenda.

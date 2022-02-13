@@ -8,10 +8,8 @@ draft: false
 extra: {}
 in_search_index: true
 slug: visual-studio-live-share-cest-de-la-balle
-categories:
-  - informatique
 tags:
-  - devops
+  - outillage
 title: Visual Studio Live Share, c’est de la balle !
 ---
 

@@ -6,10 +6,10 @@ draft: false
 extra: {}
 in_search_index: true
 slug: un-serveur-en-deux-deux
-categories:
-  - informatique
 tags:
+  - infrastructure
   - devops
+  - docker
 title: Un serveur en deux deux
 ---
 

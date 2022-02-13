@@ -6,7 +6,8 @@ date: 2022-01-10
 draft: false
 in_search_index: true
 tags:
-- web
+    - static-generator
+    - outillage
 ---
 
 ## Mes critères de sélection d'un générateur de site statique

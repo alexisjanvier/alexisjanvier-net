@@ -6,6 +6,8 @@ city: Rennes
 cp: 35000
 organizer: RennesJS
 link: https://caen.camp/talks/edition-36-introduction-au-devops
+tags:
+  - foss
 ---
 
 Réflexions sur l'open-source au [Rennes.JS](https://www.meetup.com/fr-FR/RennesJS/events/262371604/).    

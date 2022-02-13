@@ -6,9 +6,10 @@ date: 2022-02-10
 draft: false
 in_search_index: true
 tags:
-- tooling
+    - outillage
+    - terminal
 series:
-- Ma console
+    - Mon terminal
 ---
 
 Un très bon choix consisterait à choisir [Rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html) car il est rapide, stable, recommandé, documenté, publié en licence [GNU](https://fr.wikipedia.org/wiki/Licence_publique_g%C3%A9n%C3%A9rale_GNU)... Bref, un outil fiable et éprouvé !

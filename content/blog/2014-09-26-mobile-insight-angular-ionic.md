@@ -6,8 +6,6 @@ draft: false
 marmelab: https://marmelab.com/blog/2014/09/26/mobile-insight-angular-ionic.html
 in_search_index: true
 slug: mobileinsight-une-semaine-avec-angularjs,-ionic-et-phonegap
-categories:
-  - informatique
 tags:
   - mobile
 title: 'MobileInsight : une semaine avec Angular.js, Ionic et PhoneGap'

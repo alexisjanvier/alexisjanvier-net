@@ -6,9 +6,10 @@ date: 2022-02-08
 draft: false
 in_search_index: true
 tags:
-- tooling
+    - outillage
+    - terminal
 series:
-- Ma console
+    - Mon terminal
 ---
 
 ## Le principe

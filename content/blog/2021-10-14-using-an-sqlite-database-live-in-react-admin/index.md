@@ -6,10 +6,10 @@ draft: false
 marmelab: https://marmelab.com/blog/2021/10/14/using-an-sqlite-database-live-in-react-admin.html
 in_search_index: true
 slug: using-an-sqlite-database-live-in-react-admin
-categories:
-  - informatique
 tags:
-  - foss
+  - programmation
+  - javascript
+  - database
 title: Using An SQLite Database Live In React-Admin
 ---
 

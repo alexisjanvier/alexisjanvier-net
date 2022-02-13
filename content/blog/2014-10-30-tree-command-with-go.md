@@ -11,7 +11,7 @@ categories:
   - informatique
 tags:
   - go
-  - console
+  - terminal
 title: Une commande tree plus efficace grâce au Go
 ---
 

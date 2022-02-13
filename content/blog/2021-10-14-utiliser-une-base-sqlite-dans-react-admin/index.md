@@ -4,10 +4,10 @@ description: Pour utiliser une base de données dans une application web, nous d
 draft: false
 in_search_index: true
 slug: utiliser-une-base-sqlite-dans-react-admin
-categories:
-  - informatique
 tags:
-  - foss
+  - programmation
+  - javascript
+  - database
 title: Utiliser une base SQlite dans react-admin
 ---
 

@@ -6,9 +6,10 @@ date: 2022-02-09
 draft: false
 in_search_index: true
 tags:
-- tooling
+    - outillage
+    - terminal
 series:
-- Ma console
+    - Mon terminal
 ---
 
 J’utilise dans ce billet plusieurs exemples de configuration. C'est pourquoi (et pour faire suite à l’article sur les `dotfiles`) je ne vais pas commencer par des fonctionnalités de zsh mais plutôt aborder sa configuration.

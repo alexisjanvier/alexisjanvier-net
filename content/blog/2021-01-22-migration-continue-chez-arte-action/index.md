@@ -5,11 +5,9 @@ draft: false
 marmelab: https://marmelab.com/blog/2021/01/22/migration-continue-chez-arte-action.html
 in_search_index: true
 slug: migration-continue-chez-arte-action
-categories:
-  - informatique
 tags:
   - architecture
-  - projet
+  - agilite
 title: 'Histoire d''une migration chez Arte (3/3) : action'
 series:
 - Migration chez Arte

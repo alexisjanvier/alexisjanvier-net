@@ -6,9 +6,10 @@ date: 2022-02-07
 draft: false
 in_search_index: true
 tags:
-- tooling
+    - outillage
+    - terminal
 series:
-- Ma console
+    - Mon terminal
 ---
 
 Mon écosystème de travail a beaucoup évolué au cours de ma carrière. De mes débuts en PHP avec [Éclipse](https://www.eclipse.org/ide/), à [Sublime Text](https://www.sublimetext.com/) quand je suis passé sous mac, puis [Atom](https://atom.io/) ou encore [Visual Studio Code](https://code.visualstudio.com/) sous Linux, j’ai très souvent pratiqué les éditeurs GUI (pour graphical user interface). 

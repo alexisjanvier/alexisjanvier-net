@@ -6,7 +6,8 @@ date: 2022-01-31
 draft: false
 in_search_index: true
 tags:
-- métier
+  - softskill
+  - metier
 ---
 
 ## Pourquoi ne pas miser sur ses profils publics
