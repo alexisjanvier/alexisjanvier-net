@@ -1,7 +1,7 @@
 ---
 title: "Mes commandes Git"
 slug: mes-commandes-git
-description: "S'il est un outil devenu presque transparent tant il fait partie de mon quotidien de développeur, c'est bien Git et sa cli. Je ne vais pas tenter d'en faire un énième tutoriel pour ce sixième et dernier article de la série sur la console, mais je vais vous présenter brièvement la configuration à laquelle je suis arrivé après plusieurs années de pratique."
+description: "Ce sixième et dernier article de la série sur mon terminal aborde la commande que j'utilise le plus : git. Je fais le tour de mes alias, des cli et des scripts que j'ai pu ajouter au cours de mes années de pratique quotidienne, et d'un script unifiant se foisonnement de commandes devenues hétérogènes : gitt."
 date: 2022-02-12
 draft: false
 in_search_index: true

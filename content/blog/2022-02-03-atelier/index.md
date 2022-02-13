@@ -1,7 +1,7 @@
 ---
-title: "La console, mon atelier de travail"
-slug: la-console-mon-atelier-de-travail
-description: "Premier article d’une série à propos de ce qui est devenu petit à petit mon principal environnement de travail : la console. Mais est-ce juste de parler de console ? Ce premier article va tenter de poser quelques bases pour éviter les abus de langage."
+title: "Le terminal, mon atelier de travail"
+slug: le-terminal-mon-atelier-de-travail
+description: "Pour ce premier article à propos de mon terminal, je tente de mettre du contexte. Quelle est la différence entre une console et un terminal ? C’est quoi le Shell ? Est-ce que j’utilise un terminal ou un émulateur de terminal ? Qu’est-ce qu’une cli ? Autant de questions que j’ai dû me poser avant de pouvoir considérer mon terminal comme étant mon atelier de travail. "
 date: 2022-02-07
 draft: false
 in_search_index: true
@@ -14,11 +14,11 @@ series:
 
 Mon écosystème de travail a beaucoup évolué au cours de ma carrière. De mes débuts en PHP avec [Éclipse](https://www.eclipse.org/ide/), à [Sublime Text](https://www.sublimetext.com/) quand je suis passé sous mac, puis [Atom](https://atom.io/) ou encore [Visual Studio Code](https://code.visualstudio.com/) sous Linux, j’ai très souvent pratiqué les éditeurs GUI (pour graphical user interface). 
 
-En parallèle, j’ai dû petit à petit apprendre à manipuler la console, que ce soit pour utiliser des outils uniquement disponibles en cli (command-line interface), du genre [Subversion](https://subversion.apache.org/), [Git](https://git-scm.com/) ou  [gulp.js](https://gulpjs.com/), mais aussi pour gérer des serveurs.
+En parallèle, j’ai dû petit à petit apprendre à manipuler le terminal, que ce soit pour utiliser des outils uniquement disponibles en cli (command-line interface), du genre [Subversion](https://subversion.apache.org/), [Git](https://git-scm.com/) ou  [gulp.js](https://gulpjs.com/), mais aussi pour gérer des serveurs.
 
-C’est pourtant il n’y a pas si longtemps, avec l’adoption de [vim](https://www.vim.org/)/[Neovim](https://neovim.io/) comme éditeur de code, que la console est définitivement devenue mon environnement de développement. Pour filer la métaphore de l’artisanat du logiciel ([Software Craftsmanship](https://manifesto.softwarecraftsmanship.org/#/fr-fr)), j’aime bien assimiler cette console à mon atelier de travail.
+C’est pourtant il n’y a pas si longtemps, avec l’adoption de [vim](https://www.vim.org/)/[Neovim](https://neovim.io/) comme éditeur de code, que la console est définitivement devenue mon environnement de développement. Pour filer la métaphore de l’artisanat du logiciel ([Software Craftsmanship](https://manifesto.softwarecraftsmanship.org/#/fr-fr)), j’aime bien assimiler ce terminal à mon atelier de travail.
 
-Mais avant d’aller plus loin, de quoi parle-t-on quand on discourt de la console ?
+Mais avant d’aller plus loin, de quoi parle-t-on quand on discourt de la console ? Pardon, du terminal.
 
 ## Le shell
 
@@ -52,7 +52,7 @@ Chaque utilisateur possède un shell par défaut, qui sera lancé à l'ouverture
 
 Avec Windows Vista est apparu un nouvel interpréteur de commande, le Windows **PowerShell** . 
 
-## La console
+## Le terminal
 
 C'est un peu par abus de langage qu'on appelle une fenêtre d'invite de commande contenant un shell un **terminal** ou une **console**. À la base un terminal est un objet physique permettant d'interagir avec l'ordinateur.
 
@@ -169,15 +169,17 @@ Par exemple, vous pouvez utiliser ensemble les cli `history`, `grep`, `sort`, `u
 
 ## La suite
 
-Passé cette (un peu longue, mais je l'espère instructive et contextualisant) introduction, je vais maintenant m'essayer à vous présenter ce qui fait que ma console est mon atelier de travail, façonné par mes préférences et mes habitudes. Je parlerais du mon choix de shell et d'émulateur de terminal, mais aussi des cli que j'apprécie le plus. Ce ne sera pas forcément votre atelier idéal, mais je souhaite qu'il puisse vous servir d'inspiration ou vous faire découvrir quelques bons outils.
+Passé cette (un peu longue, mais j'espère instructive) introduction, j'avoue ne toujours pas bien savoir si c'est scandaleux de considérer la console et le terminal comme étant deux termes désignant la même chose...
 
-Cette suite se décomposera en 6 articles :
+Mais je vais maintenant m'essayer à vous présenter ce qui fait que ma console est mon atelier de travail, façonné par mes préférences et mes habitudes. Je parlerais du mon choix de shell et d'émulateur de terminal, mais aussi des cli que j'apprécie le plus. Ce ne sera pas forcément votre atelier idéal, mais je souhaite qu'il puisse vous servir d'inspiration ou vous faire découvrir quelques bons outils.
+
+Cette suite se décomposera en 5 articles :
 
 1. [Un atelier ouvert et transposable grâce aux dotfiles](/blog/un-atelier-ouvert-et-transposable-grace-aux-dotfiles)
-2. Pourquoi j'ai choisi le shell zsh
-3. L'émulateur de terminal kitty
-4. Mes commandes du quotidien
-5. Mes commandes git
+2. [Pourquoi j'ai choisi le shell zsh](/blog/pourquoi-j-utilise-le-shell-zsh)
+3. [L'émulateur de terminal kitty](/blog/lemulateur-de-terminal-kitty)
+4. [Mes commandes du quotidien](/blog/mes-commandes-du-quotidien)
+5. [Mes commandes git](/blog/mes-commandes-git)
 
 ## Références
 

@@ -1,7 +1,7 @@
 ---
 title: "L’émulateur de terminal Kitty"
 slug: lemulateur-de-terminal-kitty
-description: "Pour cette quatrième publication au sujet de mon environnement de travail en console, il est temps de parler du choix de l’émulateur de terminal."
+description: "Pour cette quatrième publication au sujet de mon terminal, je passe en revue les raisons m'ayant fait choisir Kitty comme émulateur : sa gestion de polices de caractère avec ligature, ses thèmes et sa gestion des onglets et fenêtres."
 date: 2022-02-10
 draft: false
 in_search_index: true
