@@ -7,6 +7,8 @@ draft: false
 in_search_index: true
 tags:
 - tooling
+series:
+- Ma console
 ---
 
 Bien  évidemment, et même s’il existe de très bons outils permettant d'utiliser [Git](https://git-scm.com/) avec une interface graphique (je pense par exemple à VS Code), je ne sortirais pas de la console.

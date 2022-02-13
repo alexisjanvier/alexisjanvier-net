@@ -2,11 +2,13 @@
 title: "La console, mon atelier de travail"
 slug: la-console-mon-atelier-de-travail
 description: "Premier article d’une série à propos de ce qui est devenu petit à petit mon principal environnement de travail : la console. Mais est-ce juste de parler de console ? Ce premier article va tenter de poser quelques bases pour éviter les abus de langage."
-date: 2022-02-03
+date: 2022-02-07
 draft: false
 in_search_index: true
 tags:
 - tooling
+series:
+- Ma console
 ---
 
 Mon écosystème de travail a beaucoup évolué au cours de ma carrière. De mes débuts en PHP avec [Éclipse](https://www.eclipse.org/ide/), à [Sublime Text](https://www.sublimetext.com/) quand je suis passé sous mac, puis [Atom](https://atom.io/) ou encore [Visual Studio Code](https://code.visualstudio.com/) sous Linux, j’ai très souvent pratiqué les éditeurs GUI (pour graphical user interface). 

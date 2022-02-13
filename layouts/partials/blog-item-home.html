@@ -9,4 +9,3 @@
         <a class="tag_list_link" href="/tags/{{ $value | urlize }}">{{ $value }}</a>{{ if ne $key (sub (len $.Params.tags) 1) }}, {{ else }}{{ end }}
     {{ end }}
 </p>
-<p class="post-description">{{ .Params.Description }}</p>

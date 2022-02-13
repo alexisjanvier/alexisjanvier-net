@@ -2,11 +2,13 @@
 title: "L’émulateur de terminal Kitty"
 slug: lemulateur-de-terminal-kitty
 description: "Pour cette quatrième publication au sujet de mon environnement de travail en console, il est temps de parler du choix de l’émulateur de terminal."
-date: 2022-02-12
+date: 2022-02-10
 draft: false
 in_search_index: true
 tags:
 - tooling
+series:
+- Ma console
 ---
 
 Un très bon choix consisterait à choisir [Rxvt-unicode](http://software.schmorp.de/pkg/rxvt-unicode.html) car il est rapide, stable, recommandé, documenté, publié en licence [GNU](https://fr.wikipedia.org/wiki/Licence_publique_g%C3%A9n%C3%A9rale_GNU)... Bref, un outil fiable et éprouvé !

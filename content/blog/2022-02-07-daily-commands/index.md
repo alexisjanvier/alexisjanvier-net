@@ -2,11 +2,13 @@
 title: "Mes commandes du quotidien"
 slug: mes-commandes-du-quotidien
 description: "Ce cinquième article de la série sur la console est un peu une liste à la Prévert. Mais il y a tout de même un fil directeur : je me suis limité aux commandes que j'utilise au moins une fois par jour."
-date: 2022-02-12
+date: 2022-02-11
 draft: false
 in_search_index: true
 tags:
 - tooling
+series:
+- Ma console
 ---
 
 ## Remplacement de quelques commandes usuelles

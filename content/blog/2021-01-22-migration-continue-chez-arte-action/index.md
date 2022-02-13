@@ -11,6 +11,8 @@ tags:
   - architecture
   - projet
 title: 'Histoire d''une migration chez Arte (3/3) : action'
+series:
+- Migration chez Arte
 ---
 
 [La première partie de cet article](/blog/2021/01/07/migration-continue-chez-arte-pourquoi.html) a montré pourquoi des impasses fonctionnelles nous ont poussés à migrer d’une API reposant sur une base documentaire vers une nouvelle API s’appuyant sur une base relationnelle.

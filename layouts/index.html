@@ -12,7 +12,7 @@
       <h1 class="section-title">Articles récents</h1>
       {{ range $elem_index, $elem_val := first 3 $posts }}
         {{ with $elem_index }}
-          {{ partial "blog-item.html" $elem_val }}
+          {{ partial "blog-item-home.html" $elem_val }}
         {{ end }}
       {{ end }}
   </section>

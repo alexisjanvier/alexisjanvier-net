@@ -1003,6 +1003,11 @@ body {
     margin-top: 3.125rem;
   }
 }
+.post-description {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  text-indent: 0 !important;
+}
 .post-content {
   max-width: 920px;
 }

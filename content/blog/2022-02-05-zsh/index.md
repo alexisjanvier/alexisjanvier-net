@@ -2,11 +2,13 @@
 title: "Pourquoi j'utilise le shell zsh"
 slug: pourquoi-j-utilise-le-shell-zsh
 description: "Pour ce troisième article de ma série sur la console, je n’imposerais pas une énième comparaison entre bash et zsh. Et pour une bonne raison : je n’ai pas opté pour zsh sur un choix réfléchi et éclairé, mais juste parce que quelqu’un qui connaissait les outils console beaucoup mieux que moi me l’avait conseillé. Ce billet ne traitera pas non plus des grands motifs pour lesquels choisir zsh, mais plutôt des petites choses faisant que j’ai continué à l’utiliser et qui pourraient me servir d’arguments pour vous le recommander."
-date: 2022-02-11
+date: 2022-02-09
 draft: false
 in_search_index: true
 tags:
 - tooling
+series:
+- Ma console
 ---
 
 J’utilise dans ce billet plusieurs exemples de configuration. C'est pourquoi (et pour faire suite à l’article sur les `dotfiles`) je ne vais pas commencer par des fonctionnalités de zsh mais plutôt aborder sa configuration.
