@@ -25,6 +25,19 @@
     },
     "work": [
         {
+            "company": "Incaya",
+            "location": "Caen, France",
+            "description": "Coopérative de services du numérique",
+            "position": "Consultant et Développeur en systèmes d’information",
+            "website": "https://www.incaya.fr/",
+            "startDate": "2022-02-01",
+            "summary": "Spécialistes de la veille et de l'invention technique, nous conseillons et réalisons des prototypes logiciels et matériels pour des projets scientifiques, éducatifs et culturels.",
+            "highlights": [
+                "Sociétaire de la coopérative",
+                "Participation aux projets open source"
+            ]
+        },
+        {
             "company": "Marmelab",
             "location": "Nancy, France",
             "description": "Société de service en développement informatique",

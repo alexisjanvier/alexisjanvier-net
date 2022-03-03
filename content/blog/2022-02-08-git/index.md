@@ -1,7 +1,7 @@
 ---
 title: "Mes commandes Git"
 slug: mes-commandes-git
-description: "Ce sixième et dernier article de la série sur mon terminal aborde la commande que je lance le plus souvent (historique zsh à l'appui) : git. J'y explique mes alias de configuration, les cli et les scripts que j'ai pu ajouter au cours du temps, ainsi qu'un script unifiant se foisonnement de commandes devenues hétérogènes : gitt."
+description: "Ce sixième et dernier article de la série sur mon terminal aborde la commande que je lance le plus souvent (historique zsh à l'appui) : git. J'y explique mes alias de configuration, les cli et les scripts que j'ai pu ajouter au cours du temps, ainsi qu'un script unifiant ce foisonnement de commandes devenues hétérogènes : gitt."
 date: 2022-02-12
 draft: false
 in_search_index: true
