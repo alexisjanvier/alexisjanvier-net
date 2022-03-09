@@ -6,6 +6,9 @@ copyright = 'This work is licensed under a Creative Commons Attribution-ShareAli
 [params]
   description = 'Internet is not dead. It just smells funny.'
   homeMetaContent = 'Internet is not dead. It just smells funny.'
+
+[outputs]
+  home = ["html","rss","json"] # Add json to the list
 [taxonomies]
   category = 'categories'
   series = 'series'
