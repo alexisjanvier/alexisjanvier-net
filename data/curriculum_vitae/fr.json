@@ -1,285 +1,276 @@
 {
-    "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
-    "basics": {
-        "name": "Alexis Janvier",
-        "label": "Consultant et Développeur en systèmes d’information",
-        "picture": "https://alexisjanvier.net/images/alexisjanvier-small.jpg",
-        "email": "contact@alexisjanvier.net",
-        "phone": "",
-        "website": "https://alexisjanvier.net",
-        "summary": "Bien qu’initié très tôt aux ordinateurs (nous avons eu à la maison un ZX81, un Amstrad 464 puis un Amiga 500), j’ai choisi de suivre des études de biologie. Je me suis passionné durant ce cursus pour l’épistémologie puis j’ai commencé à travailler dans la médiation scientifique. Mais ce n’est « que » en 2002 que j’ai rencontré ma vocation : Internet.\n\nAprès un début de carrière sous le statut d'informaticien indépendant, je me suis salarié comme programmeur PHP au sein d’établissements aux objectifs variés : exploration des sols, audiovisuel, musique ou encore publicité. Je suis ensuite devenu développeur senior grâce à 7 années inoubliables passées parmi les membres de l’atelier d’innovation digitale Marmelab.\n\nAujourd’hui, je suis membre d'Incaya, une coopérative de services du numérique. Et lorsque ma famille, le travail ou les micro-aventures normandes n’occupent pas tout mon temps, je participe à l’organisation du CaenCamp.",
-        "location": {
-            "address": "",
-            "postalCode": "14000",
-            "city": "Caen",
-            "countryCode": "FR",
-            "region": ""
-        },
-        "profiles": [
-            {
-                "network": "Github",
-                "username": "alexisjanvier",
-                "url": "https://github.com/alexisjanvier"
-            }
-        ]
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Alexis Janvier",
+    "label": "Consultant et Développeur en systèmes d’information",
+    "picture": "https://alexisjanvier.net/images/alexisjanvier-small.jpg",
+    "email": "contact@alexisjanvier.net",
+    "phone": "",
+    "website": "https://alexisjanvier.net",
+    "summary": "Bien qu’initié très tôt aux ordinateurs (nous avons eu à la maison un ZX81, un Amstrad 464 puis un Amiga 500), j’ai choisi de suivre des études de biologie. Je me suis passionné durant ce cursus pour l’épistémologie puis j’ai commencé à travailler dans la médiation scientifique. Mais ce n’est « que » en 2002 que j’ai rencontré ma vocation : Internet.\n\nAprès un début de carrière sous le statut d'informaticien indépendant, je me suis salarié comme programmeur PHP au sein d’établissements aux objectifs variés : exploration des sols, audiovisuel, musique ou encore publicité. Je suis ensuite devenu développeur senior grâce à 7 années inoubliables passées parmi les membres de l’atelier d’innovation digitale Marmelab.\n\nAujourd’hui, je suis membre d'Incaya, une coopérative de services du numérique. Et lorsque ma famille, le travail ou les micro-aventures normandes n’occupent pas tout mon temps, je participe à l’organisation du CaenCamp.",
+    "location": {
+      "address": "",
+      "postalCode": "14000",
+      "city": "Caen",
+      "countryCode": "FR",
+      "region": ""
     },
-    "work": [
-        {
-            "company": "Incaya",
-            "location": "Caen, France",
-            "description": "Coopérative de services du numérique",
-            "position": "Consultant et Développeur en systèmes d’information",
-            "website": "https://www.incaya.fr/",
-            "startDate": "2022-02-01",
-            "summary": "Spécialistes de la veille et de l'invention technique, nous conseillons et réalisons des prototypes logiciels et matériels pour des projets scientifiques, éducatifs et culturels.",
-            "highlights": [
-                "Sociétaire de la coopérative",
-                "Participation aux projets open source"
-            ]
-        },
-        {
-            "company": "Marmelab",
-            "location": "Nancy, France",
-            "description": "Société de service en développement informatique",
-            "position": "Consultant",
-            "website": "https://marmelab.com",
-            "startDate": "2014-09-01",
-            "endDate": "2022-01-01",
-            "summary": "Marmelab se qualifie comme un atelier d'innovation numérique, et ce n'est pas usurpé. J'y ai tout appris : les bonnes pratiques de développement mises en pratique, le travail en équipe, l'agilité, la participation au monde de l'open source, la veille technologique efficace, la communication au sein de la communauté des développeurs, l'architecture logiciel... Ces années ont définitivement fait taire mon syndrome de l'imposteur.",
-            "highlights": [
-                "Collaboration à la mise en place de la plateforme numérique d'Arte",
-                "Collaboration avec le Cnam et le CNRS",
-                "Participation à plusieurs projets open source",
-                "Écriture d'articles de blog",
-                "Réalisation de plusieurs conférences sur le développement",
-                "Animation d'une formation sur React",
-                "Travail en « full-remote » depuis Paris puis Caen"
-            ]
-        },
-        {
-            "company": "Hcéres",
-            "location": "Paris, France",
-            "description": "Autorité administrative indépendante",
-            "position": "Expert professionnel",
-            "website": "https://www.hceres.fr/fr",
-            "startDate": "2013-01-01",
-            "endDate": "2014-12-01",
-            "summary": "Parallèlement à mon activité professionnelle, j’ai été sollicité par le Haut Conseil de l’évaluation de la recherche et de l’enseignement supérieur  (Hcéres), l’autorité administrative indépendante chargée d’évaluer l’ensemble des structures de l’enseignement supérieur et de la recherche, pour participer à l’examen des licences professionnelles en informatique.",
-            "highlights": [
-                "Campagnes d'évaluation 2013",
-                "Campagnes d'évaluation 2014"
-            ]
-        },
-        {
-            "company": "Rapp France",
-            "location": "Paris, France",
-            "description": "Agence de communication",
-            "position": "Lead Developer PHP",
-            "website": "https://www.rapp.com/",
-            "startDate": "2011-09-01",
-            "endDate": "2014-08-01",
-            "summary": "Mon passage chez Rapp France (une filiale Omnicom) représente mon expérience dans le monde des agences de communication. J’y ai côtoyé des équipes créatives autant organisées et hiérarchisées que des équipes de développeurs dans une startup, des clients très connus et exigeants, des community manager, des data scientists et beaucoup de remises de prix. Mais aussi quelques développeurs très talentueux et créatifs.",
-            "highlights": [
-                "Développement de sites pour Bel, Dior, Nespresso, Nivea ou Sony",
-                "Organisation de meetup au sein de l'entreprise"
-            ]
-        },
-        {
-            "company": "Plemi",
-            "location": "Paris, France",
-            "description": "Startup",
-            "position": "Directeur Technique",
-            "website": "http://www.plemi.com/",
-            "startDate": "2009-01-01",
-            "endDate": "2011-08-01",
-            "summary": "Mon passage chez Plemi représente mon expérience du monde des Startups : un projet passionnant (l’organisation collaborative de concert) portés par des passionnés, la confrontation avec le réel d’un secteur économique déjà existant, les levées de fonds… Mais cela a été aussi l’occasion de prendre en main un framework de développement performant (Symfony) et d’assister à une quantité de concerts.",
-            "highlights": [
-                "Coordination de l'équipe de  développement",
-                "Mise en place d'une plateforme sociale monolitique en Symfony (1.4)"
-            ]
-        },
-        {
-            "company": "France Télévision Interactive",
-            "location": "Paris, France",
-            "description": "Groupement d'intérêt économique",
-            "position": "Intégrateur / Développeur",
-            "website": "https://www.france.tv/",
-            "startDate": "2007-12-01",
-            "endDate": "2008-12-01",
-            "summary": "Au sein FTVI (un GIE disparu depuis), j’ai participé à la réalisation et à l’intégration des sites des émissions du groupe public France Télévision. Ce fut l’occasion de découvrir un mode de production standardisé, chaque site devant respecter des normes graphiques et techniques imposées par la production.",
-            "highlights": [
-                "Site de Thalassa pour France 3",
-                "Empreinte pour France 5",
-                "Portail de France O",
-                "Développement en PHP/Spip"
-            ]
-        },
-        {
-            "company": "Compagnie Générale de Géophysique - Veritas",
-            "location": "Paris, France",
-            "description": "Entreprise spécialisée dans l'exploration du sous-sol",
-            "position": "Développeur",
-            "website": "https://www.cgg.com/",
-            "startDate": "2006-11-01",
-            "endDate": "2007-11-01",
-            "summary": "Las de travailler en indépendant, j'ai intégré la Compagnie Générale de Géophysique, leader mondial en services et équipements géophysiques. Au sein du secteur Recherche & Développement, j'ai été pour la première fois confronté à l'intégration d'un projet au sein d'une infrastructure informatique conséquente et hétérogène.",
-            "highlights": [
-                "Conception et réalisation d'un service Intranet de gestion de projets."
-            ]
-        },
-        {
-            "company": "Infosciences",
-            "location": "Paris, France",
-            "description": "Entreprise individuelle de conseil en communication scientifique",
-            "position": "Dirigeant",
-            "website": "",
-            "startDate": "2005-01-01",
-            "endDate": "2006-10-01",
-            "summary": "Afin d’allier mon envie d'exercer dans le développement web et mon bagage en médiation scientifique, j’ai crée Infosciences (SIRET 490 536 075 00016), une entreprise individuelle de conseil en communication scientifique, spécialisée dans la gestion de projets Internet pour les centres de recherche. Ses deux années d’existence m’ont permis de découvrir le monde du travail comme indépendant, un cadre riche de défis, de rencontres, mais aussi de difficultés.",
-            "highlights": [
-                "Conception et réalisation des sites Internet du projet européen  Hands-On Universe",
-                "Réalisation d’une bibliothèque virtuelle en ligne, pour l’équipe relativité, gravitation et astrophysique du laboratoire d'Etude du Rayonnement et de la Matière en Astrophysique",
-                "Conception et réalisation du site Internet du commité international de jeux mathématique"
-            ]
-        },
-        {
-            "company": "Association Science Technologie Société",
-            "location": "Paris, France",
-            "description": "Association de promotion de la culture scientifique et technique",
-            "position": "Chef de projet",
-            "website": "http://asts.paris/",
-            "startDate": "2001-04-01",
-            "endDate": "2004-09-01",
-            "summary": "L’Association Science Technologie Société a représenté pour moi la structure parfaite pour mettre en pratique ma formation en médiation scientifique. Cette association conjuguait une plateforme de production théorique autour de la culture scientifique à un lieu de création d’expositions et d’organisation de grand moment de rencontre et de diffusion populaire. De manière non anecdotique pour la suite de mon parcours, l’association animait un espace public numérique.",
-            "highlights": [
-                "Conception et réalisation d’expositions, organisation de colloques",
-                "Conduite du projet de site Internet de l’association",
-                "Responsable du parc informatique et du site Internet",
-                "Participation au projet de l’espace public numérique (EPN) du 13e arrondissement de Paris"
-            ]
-        },
-        {
-            "company": "Société Astronomique de France",
-            "location": "Paris, France",
-            "description": "Association de promotion du développement et de la pratique de l'astronomie",
-            "position": "Objecteur de conscience",
-            "website": "https://saf-astronomie.fr",
-            "startDate": "1999-11-01",
-            "endDate": "2001-04-01",
-            "summary": "J’ai eu la chance de découvrir le monde de l’astronomie dès le collège. Et cette chance ne m’a pas quitté puisque la Société Astronomique de France m’a accueilli pour effectuer mon temps de service militaire dans le cadre d’une objection de conscience.",
-            "highlights": [
-                "Gestion de la vie de l'association"
-            ]
-        }
-    ],
-    "volunteer": [
-        {
-            "organization": "CaenCamp",
-            "position": "Organisateur",
-            "website": "https://caen.camp",
-            "startDate": "2017-03-01",
-            "summary": "Le CaenCamp est un collectif ouvert à tous.tes les développeur.euses du Calvados, que ces personnes soient juniors, séniores, professionnelles, étudiantes ou juste curieuses.\n\nUne rencontre, gratuite, est organisée chaque dernier jeudi du mois autour de sujets présentés par des membres du collectif souhaitant partager leur expérience. Ces sujets peuvent concerner n'importe quel langage de programmation, voir d'autres sujets que la programmation, du moment qu'ils concernent le monde du développement informatique.",
-            "highlights": [
-                "Animation du Coding CaenCamp",
-                "Organisation des rencontres",
-                "Gestion du site web"
-            ]
-        }
-    ],
-    "education": [
-        {
-            "institution": "Université Paris IV et Université du Maine",
-            "area": "Science de la Vie",
-            "studyType": "Deug",
-            "startDate": "1996-09-01",
-            "endDate": "1998-06-01",
-            "gpa": "",
-            "courses": [
-                "Deug Science de la Vie"
-            ]
-        },
-        {
-            "institution": "IUT de Tours",
-            "area": "Médiation et Animation Scientifique",
-            "studyType": "Année spéciale",
-            "startDate": "1998-09-01",
-            "endDate": "1999-06-01",
-            "gpa": "",
-            "courses": [
-                "Année spéciale en médiation et animation scientifique"
-            ]
-        },
-        {
-            "institution": "Sorbonne, Paris",
-            "area": "Philosophie",
-            "studyType": "Licence",
-            "startDate": "1999-09-01",
-            "endDate": "2000-09-01",
-            "gpa": "",
-            "courses": [
-                "Licence Philosophie parcours Logique et culture scientifique"
-            ]
-        }
-    ],
-    "awards": [],
-    "publications": [
-        {
-            "name": "Publications écrites",
-            "publisher": "Blog personnel",
-            "releaseDate": "2022-01-01",
-            "website": "https://alexisjanvier.net/blog/",
-            "summary": "Mes posts de blog"
-        }
-    ],
-    "skills": [
-        {
-            "name": "Développement web",
-            "level": "Master",
-            "keywords": [
-                "PHP",
-                "JavaScript"
-            ]
-        },
-        {
-            "name": "Architecture Web",
-            "level": "Master",
-            "keywords": [
-                "Monolitique",
-                "Micro Service"
-            ]
-        }
-    ],
-    "languages": [
-        {
-            "language": "Anglais",
-            "fluency": "Lû et écriture ok, l'oral manque de pratique."
-        }
-    ],
-    "interests": [
-        {
-            "name": "La musique",
-            "keywords": [
-                "Toutes"
-            ]
-        },
-        {
-            "name": "La science fiction",
-            "keywords": [
-                "pas toute"
-            ]
-        },
-        {
-            "name": "Le tir à l'arc",
-            "keywords": [
-                "Je débute"
-            ]
-        }
-    ],
-    "references": [],
-    "projects": [],
-    "meta": {
-        "canonical": "",
-        "version": "",
-        "lastModified": ""
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "alexisjanvier",
+        "url": "https://github.com/alexisjanvier"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Incaya",
+      "location": "Caen, France",
+      "description": "Coopérative de services du numérique",
+      "position": "Consultant et Développeur en systèmes d’information",
+      "website": "https://www.incaya.fr/",
+      "startDate": "2022-02-01",
+      "summary": "Spécialistes de la veille et de l'invention technique, nous conseillons et réalisons des prototypes logiciels et matériels pour des projets scientifiques, éducatifs et culturels.",
+      "highlights": [
+        "Sociétaire de la coopérative",
+        "Participation aux projets open source"
+      ]
+    },
+    {
+      "company": "Marmelab",
+      "location": "Nancy, France",
+      "description": "Société de service en développement informatique",
+      "position": "Consultant",
+      "website": "https://marmelab.com",
+      "startDate": "2014-09-01",
+      "endDate": "2022-01-01",
+      "summary": "Marmelab se qualifie comme un atelier d'innovation numérique, et ce n'est pas usurpé. J'y ai tout appris : les bonnes pratiques de développement mises en pratique, le travail en équipe, l'agilité, la participation au monde de l'open source, la veille technologique efficace, la communication au sein de la communauté des développeurs, l'architecture logiciel... Ces années ont définitivement fait taire mon syndrome de l'imposteur.",
+      "highlights": [
+        "Collaboration à la mise en place de la plateforme numérique d'Arte",
+        "Collaboration avec le Cnam et le CNRS",
+        "Participation à plusieurs projets open source",
+        "Écriture d'articles de blog",
+        "Réalisation de plusieurs conférences sur le développement",
+        "Animation d'une formation sur React",
+        "Travail en « full-remote » depuis Paris puis Caen"
+      ]
+    },
+    {
+      "company": "Hcéres",
+      "location": "Paris, France",
+      "description": "Autorité administrative indépendante",
+      "position": "Expert professionnel",
+      "website": "https://www.hceres.fr/fr",
+      "startDate": "2013-01-01",
+      "endDate": "2014-12-01",
+      "summary": "Parallèlement à mon activité professionnelle, j’ai été sollicité par le Haut Conseil de l’évaluation de la recherche et de l’enseignement supérieur  (Hcéres), l’autorité administrative indépendante chargée d’évaluer l’ensemble des structures de l’enseignement supérieur et de la recherche, pour participer à l’examen des licences professionnelles en informatique.",
+      "highlights": [
+        "Campagnes d'évaluation 2013",
+        "Campagnes d'évaluation 2014"
+      ]
+    },
+    {
+      "company": "Rapp France",
+      "location": "Paris, France",
+      "description": "Agence de communication",
+      "position": "Lead Developer PHP",
+      "website": "https://www.rapp.com/",
+      "startDate": "2011-09-01",
+      "endDate": "2014-08-01",
+      "summary": "Mon passage chez Rapp France (une filiale Omnicom) représente mon expérience dans le monde des agences de communication. J’y ai côtoyé des équipes créatives autant organisées et hiérarchisées que des équipes de développeurs dans une startup, des clients très connus et exigeants, des community manager, des data scientists et beaucoup de remises de prix. Mais aussi quelques développeurs très talentueux et créatifs.",
+      "highlights": [
+        "Développement de sites pour Bel, Dior, Nespresso, Nivea ou Sony",
+        "Organisation de meetup au sein de l'entreprise"
+      ]
+    },
+    {
+      "company": "Plemi",
+      "location": "Paris, France",
+      "description": "Startup",
+      "position": "Directeur Technique",
+      "website": "http://www.plemi.com/",
+      "startDate": "2009-01-01",
+      "endDate": "2011-08-01",
+      "summary": "Mon passage chez Plemi représente mon expérience du monde des Startups : un projet passionnant (l’organisation collaborative de concert) portés par des passionnés, la confrontation avec le réel d’un secteur économique déjà existant, les levées de fonds… Mais cela a été aussi l’occasion de prendre en main un framework de développement performant (Symfony) et d’assister à une quantité de concerts.",
+      "highlights": [
+        "Coordination de l'équipe de  développement",
+        "Mise en place d'une plateforme sociale monolitique en Symfony (1.4)"
+      ]
+    },
+    {
+      "company": "France Télévision Interactive",
+      "location": "Paris, France",
+      "description": "Groupement d'intérêt économique",
+      "position": "Intégrateur / Développeur",
+      "website": "https://www.france.tv/",
+      "startDate": "2007-12-01",
+      "endDate": "2008-12-01",
+      "summary": "Au sein FTVI (un GIE disparu depuis), j’ai participé à la réalisation et à l’intégration des sites des émissions du groupe public France Télévision. Ce fut l’occasion de découvrir un mode de production standardisé, chaque site devant respecter des normes graphiques et techniques imposées par la production.",
+      "highlights": [
+        "Site de Thalassa pour France 3",
+        "Empreinte pour France 5",
+        "Portail de France O",
+        "Développement en PHP/Spip"
+      ]
+    },
+    {
+      "company": "Compagnie Générale de Géophysique - Veritas",
+      "location": "Paris, France",
+      "description": "Entreprise spécialisée dans l'exploration du sous-sol",
+      "position": "Développeur",
+      "website": "https://www.cgg.com/",
+      "startDate": "2006-11-01",
+      "endDate": "2007-11-01",
+      "summary": "Las de travailler en indépendant, j'ai intégré la Compagnie Générale de Géophysique, leader mondial en services et équipements géophysiques. Au sein du secteur Recherche & Développement, j'ai été pour la première fois confronté à l'intégration d'un projet au sein d'une infrastructure informatique conséquente et hétérogène.",
+      "highlights": [
+        "Conception et réalisation d'un service Intranet de gestion de projets."
+      ]
+    },
+    {
+      "company": "Infosciences",
+      "location": "Paris, France",
+      "description": "Entreprise individuelle de conseil en communication scientifique",
+      "position": "Dirigeant",
+      "website": "",
+      "startDate": "2005-01-01",
+      "endDate": "2006-10-01",
+      "summary": "Afin d’allier mon envie d'exercer dans le développement web et mon bagage en médiation scientifique, j’ai crée Infosciences (SIRET 490 536 075 00016), une entreprise individuelle de conseil en communication scientifique, spécialisée dans la gestion de projets Internet pour les centres de recherche. Ses deux années d’existence m’ont permis de découvrir le monde du travail comme indépendant, un cadre riche de défis, de rencontres, mais aussi de difficultés.",
+      "highlights": [
+        "Conception et réalisation des sites Internet du projet européen  Hands-On Universe",
+        "Réalisation d’une bibliothèque virtuelle en ligne, pour l’équipe relativité, gravitation et astrophysique du laboratoire d'Etude du Rayonnement et de la Matière en Astrophysique",
+        "Conception et réalisation du site Internet du commité international de jeux mathématique"
+      ]
+    },
+    {
+      "company": "Association Science Technologie Société",
+      "location": "Paris, France",
+      "description": "Association de promotion de la culture scientifique et technique",
+      "position": "Chef de projet",
+      "website": "http://asts.paris/",
+      "startDate": "2001-04-01",
+      "endDate": "2004-09-01",
+      "summary": "L’Association Science Technologie Société a représenté pour moi la structure parfaite pour mettre en pratique ma formation en médiation scientifique. Cette association conjuguait une plateforme de production théorique autour de la culture scientifique à un lieu de création d’expositions et d’organisation de grand moment de rencontre et de diffusion populaire. De manière non anecdotique pour la suite de mon parcours, l’association animait un espace public numérique.",
+      "highlights": [
+        "Conception et réalisation d’expositions, organisation de colloques",
+        "Conduite du projet de site Internet de l’association",
+        "Responsable du parc informatique et du site Internet",
+        "Participation au projet de l’espace public numérique (EPN) du 13e arrondissement de Paris"
+      ]
+    },
+    {
+      "company": "Société Astronomique de France",
+      "location": "Paris, France",
+      "description": "Association de promotion du développement et de la pratique de l'astronomie",
+      "position": "Objecteur de conscience",
+      "website": "https://saf-astronomie.fr",
+      "startDate": "1999-11-01",
+      "endDate": "2001-04-01",
+      "summary": "J’ai eu la chance de découvrir le monde de l’astronomie dès le collège. Et cette chance ne m’a pas quitté puisque la Société Astronomique de France m’a accueilli pour effectuer mon temps de service militaire dans le cadre d’une objection de conscience.",
+      "highlights": ["Gestion de la vie de l'association"]
     }
+  ],
+  "volunteer": [
+    {
+      "organization": "Convivialist Computer Club",
+      "position": "Co-organisateur",
+      "website": "https://convivialist.cc",
+      "startDate": "2022-09-01",
+      "summary": "Un club d’informatique donc …😱 Mais son objectif n’est pas d’apprendre le code - même si sur un malentendu cela pourrait arriver - mais plutôt d’explorer les chemins que les outils numériques connus ne permettent pas d’emprunter.",
+      "highlights": ["Animation du club"]
+    },
+    {
+      "organization": "CaenCamp",
+      "position": "Co-organisateur",
+      "website": "https://caencamp.convivialist.cc",
+      "startDate": "2017-03-01",
+      "endDate": "2022-08-31",
+      "summary": "Le CaenCamp est un collectif ouvert à tous.tes les développeur.euses du Calvados, que ces personnes soient juniors, séniores, professionnelles, étudiantes ou juste curieuses.\n\nUne rencontre, gratuite, est organisée chaque dernier jeudi du mois autour de sujets présentés par des membres du collectif souhaitant partager leur expérience. Ces sujets peuvent concerner n'importe quel langage de programmation, voir d'autres sujets que la programmation, du moment qu'ils concernent le monde du développement informatique.",
+      "highlights": [
+        "Animation du Coding CaenCamp",
+        "Organisation des rencontres",
+        "Gestion du site web"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Université Paris IV et Université du Maine",
+      "area": "Science de la Vie",
+      "studyType": "Deug",
+      "startDate": "1996-09-01",
+      "endDate": "1998-06-01",
+      "gpa": "",
+      "courses": ["Deug Science de la Vie"]
+    },
+    {
+      "institution": "IUT de Tours",
+      "area": "Médiation et Animation Scientifique",
+      "studyType": "Année spéciale",
+      "startDate": "1998-09-01",
+      "endDate": "1999-06-01",
+      "gpa": "",
+      "courses": ["Année spéciale en médiation et animation scientifique"]
+    },
+    {
+      "institution": "Sorbonne, Paris",
+      "area": "Philosophie",
+      "studyType": "Licence",
+      "startDate": "1999-09-01",
+      "endDate": "2000-09-01",
+      "gpa": "",
+      "courses": [
+        "Licence Philosophie parcours Logique et culture scientifique"
+      ]
+    }
+  ],
+  "awards": [],
+  "publications": [
+    {
+      "name": "Publications écrites",
+      "publisher": "Blog personnel",
+      "releaseDate": "2022-01-01",
+      "website": "https://alexisjanvier.net/blog/",
+      "summary": "Mes posts de blog"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Développement web",
+      "level": "Master",
+      "keywords": ["PHP", "JavaScript"]
+    },
+    {
+      "name": "Architecture Web",
+      "level": "Master",
+      "keywords": ["Monolitique", "Micro Service"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Anglais",
+      "fluency": "Lû et écriture ok, l'oral manque de pratique."
+    }
+  ],
+  "interests": [
+    {
+      "name": "La musique",
+      "keywords": ["Toutes"]
+    },
+    {
+      "name": "La science fiction",
+      "keywords": ["pas toute"]
+    },
+    {
+      "name": "Le tir à l'arc",
+      "keywords": ["Je débute"]
+    }
+  ],
+  "references": [],
+  "projects": [],
+  "meta": {
+    "canonical": "",
+    "version": "",
+    "lastModified": ""
+  }
 }
