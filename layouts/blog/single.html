@@ -1,48 +1,67 @@
-{{ define "prismcss" }}
-<link rel="stylesheet" href="{{ "css/prism-accessible.css" | relURL }}" media="none" onload="this.media='all';">
-{{ end }}
-{{ define "jsonld" }}
+{{ define "prismcss" }} <link rel="stylesheet" href="{{
+"css/prism-accessible.css" | relURL }}" media="none" onload="this.media='all';">
+{{ end }} {{ define "jsonld" }}
 <script type="application/ld+json">
-    {"mainEntityOfPage":{"@type":"WebPage","@id":"{{ .RelPermalink | absURL }}"},"description":"{{ .Params.Description }}","url":"{{ .RelPermalink | absURL }}","@type":"BlogPosting","headline":"{{ .Title }}","dateModified":"{{ .Date.UTC }}","datePublished":"{{ .Date.UTC }}","author":{"@type":"Person","name":"Alexis Janvier"},"@context":"https://schema.org"}</script>
-{{ end }}
-{{ define "main" }}
+  {
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ .RelPermalink | absURL }}"
+    },
+    "description": "{{ .Params.Description }}",
+    "url": "{{ .RelPermalink | absURL }}",
+    "@type": "BlogPosting",
+    "headline": "{{ .Title }}",
+    "dateModified": "{{ .Date.UTC }}",
+    "datePublished": "{{ .Date.UTC }}",
+    "author": { "@type": "Person", "name": "Alexis Janvier" },
+    "@context": "https://schema.org"
+  }
+</script>
+{{ end }} {{ define "main" }}
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">{{ .Title }}</h1>
-        <p class="post-meta">
-            {{ if .Params.marmelab }}Publié à l'origine sur le blog de <a href="{{ .Params.marmelab }}">Marmelab</a> le {{ end }}
-            <time datetime="{{ .Date }}" itemprop="datePublished">
-                {{ .Date | time.Format ":date_full" }}
-            </time>- {{ .ReadingTime }} min de lecture -  
-            {{ range $key, $value := .Params.tags }}
-                <a class="tag_list_link" href="/tags/{{ $value | urlize }}/">{{ $value }}</a>{{ if ne $key (sub (len $.Params.tags) 1) }}, {{ else }}{{ end }}
-            {{ end }}{{ if .Params.series }} - série: {{ range $key, $value := .Params.series }}
-                <a class="tag_list_link" href="/series/{{ $value | urlize }}/">{{ $value }}</a>{{ if ne $key (sub (len $.Params.series) 1) }}, {{ else }}{{ end }}
-            {{ end }}{{ end }}
-        </p>
-    </header>
-    <div class="post-content" itemprop="articleBody">
-        <p class="attention-grabber">{{ .Params.Description }}</p>
-        {{ .Content }}
-    </div>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ .Title }}</h1>
+    <p class="post-meta">
+      {{ if .Params.marmelab }}Publié à l'origine sur le blog de
+      <a href="{{ .Params.marmelab }}">Marmelab</a> le {{ end }} {{ if
+      .Params.incaya }}Publié à l'origine sur le blog de
+      <a href="{{ .Params.incaya }}">INCAYA</a> le {{ end }}
+      <time datetime="{{ .Date }}" itemprop="datePublished">
+        {{ .Date | time.Format ":date_full" }} </time
+      >- {{ .ReadingTime }} min de lecture - {{ range $key, $value :=
+      .Params.tags }}
+      <a class="tag_list_link" href="/tags/{{ $value | urlize }}/"
+        >{{ $value }}</a
+      >{{ if ne $key (sub (len $.Params.tags) 1) }}, {{ else }}{{ end }} {{ end
+      }}{{ if .Params.series }} - série: {{ range $key, $value := .Params.series
+      }}
+      <a class="tag_list_link" href="/series/{{ $value | urlize }}/"
+        >{{ $value }}</a
+      >{{ if ne $key (sub (len $.Params.series) 1) }}, {{ else }}{{ end }} {{
+      end }}{{ end }}
+    </p>
+  </header>
+  <div class="post-content" itemprop="articleBody">
+    <p class="attention-grabber">{{ .Params.Description }}</p>
+    {{ .Content }}
+  </div>
 </article>
-{{ $related := .Site.RegularPages.Related . | first 3 }}
-{{ with $related }}
+{{ $related := .Site.RegularPages.Related . | first 3 }} {{ with $related }}
 <section class="related-posts">
-    <h1 class="section-title">Articles connexes</h1>
-    <ul>
-        {{ range . }}
-        <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            <span class="light-font"> — {{ .Date | time.Format ":date_full" }}</span>
-        </li>
-        {{ end }}
-    </ul>
+  <h1 class="section-title">Articles connexes</h1>
+  <ul>
+    {{ range . }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <span class="light-font"> — {{ .Date | time.Format ":date_full" }}</span>
+    </li>
+    {{ end }}
+  </ul>
 </section>
+{{ end }} {{ end }} {{ define "prism" }} {{ $prism := resources.Get
+"js/prism.js" | resources.Fingerprint "sha256" }}
+<script
+  src="{{ $prism.Permalink | relURL }}"
+  integrity="{{ $prism.Data.Integrity }}"
+></script>
 {{ end }}
-{{ end }}
-{{ define "prism" }}
-{{ $prism := resources.Get "js/prism.js" | resources.Fingerprint "sha256" }}
-<script src="{{ $prism.Permalink | relURL }}" integrity="{{ $prism.Data.Integrity }}"></script>
-{{ end }}
-        
