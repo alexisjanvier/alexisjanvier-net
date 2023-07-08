@@ -25,7 +25,7 @@
   },
   "work": [
     {
-      "company": "Incaya",
+      "company": "INCAYA",
       "location": "Caen, France",
       "description": "Coopérative de services du numérique",
       "position": "Consultant et Développeur en systèmes d’information",
@@ -45,7 +45,7 @@
       "website": "https://marmelab.com",
       "startDate": "2014-09-01",
       "endDate": "2022-01-01",
-      "summary": "Marmelab se qualifie comme un atelier d'innovation numérique, et ce n'est pas usurpé. J'y ai tout appris : les bonnes pratiques de développement mises en pratique, le travail en équipe, l'agilité, la participation au monde de l'open source, la veille technologique efficace, la communication au sein de la communauté des développeurs, l'architecture logiciel... Ces années ont définitivement fait taire mon syndrome de l'imposteur.",
+      "summary": "Marmelab se qualifie comme un atelier d'innovation numérique. J'y ai beaucoup appris : des bonnes pratiques de développement, le travail en équipe, l'agilité, la participation au monde de l'open source, la veille technologique efficace, la communication au sein de la communauté des développeurs, l'architecture logiciel... Ces années ont fait taire mon syndrome de l'imposteur au sein de cette industrie.",
       "highlights": [
         "Collaboration à la mise en place de la plateforme numérique d'Arte",
         "Collaboration avec le Cnam et le CNRS",
@@ -172,25 +172,25 @@
   ],
   "volunteer": [
     {
-      "organization": "Convivialist Computer Club",
-      "position": "Co-organisateur",
-      "website": "https://convivialist.cc",
-      "startDate": "2022-09-01",
-      "summary": "Un club d’informatique donc …😱 Mais son objectif n’est pas d’apprendre le code - même si sur un malentendu cela pourrait arriver - mais plutôt d’explorer les chemins que les outils numériques connus ne permettent pas d’emprunter.",
-      "highlights": ["Animation du club"]
-    },
-    {
       "organization": "CaenCamp",
       "position": "Co-organisateur",
       "website": "https://caencamp.convivialist.cc",
       "startDate": "2017-03-01",
-      "endDate": "2022-08-31",
       "summary": "Le CaenCamp est un collectif ouvert à tous.tes les développeur.euses du Calvados, que ces personnes soient juniors, séniores, professionnelles, étudiantes ou juste curieuses.\n\nUne rencontre, gratuite, est organisée chaque dernier jeudi du mois autour de sujets présentés par des membres du collectif souhaitant partager leur expérience. Ces sujets peuvent concerner n'importe quel langage de programmation, voir d'autres sujets que la programmation, du moment qu'ils concernent le monde du développement informatique.",
       "highlights": [
         "Animation du Coding CaenCamp",
         "Organisation des rencontres",
         "Gestion du site web"
       ]
+    },
+    {
+      "organization": "Convivialist Computer Club",
+      "position": "Co-organisateur",
+      "website": "https://convivialist.cc",
+      "startDate": "2022-06-01",
+      "endDate": "2023-07-01",
+      "summary": "Un club d’informatique donc …😱 Mais son objectif n’est pas d’apprendre le code - même si sur un malentendu cela pourrait arriver - mais plutôt d’explorer les chemins que les outils numériques connus ne permettent pas d’emprunter.",
+      "highlights": ["Animation du club"]
     }
   ],
   "education": [
